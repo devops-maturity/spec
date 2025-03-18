@@ -22,6 +22,11 @@ body {
   margin-right: auto;
   padding-left: $gap-md;
   padding-right: $gap-md;
+
+}
+
+.container.markdown-body {
+  margin: 0 auto;
 }
 
 main {

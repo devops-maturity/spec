@@ -1,6 +1,6 @@
-name = "Conventional Branch"
+name = "DevOps Maturity"
 license = "MIT"
-description = "Hugo theme for Conventional Branch website"
+description = "Hugo theme for DevOps Maturity website"
 homepage = "https://github.com/devops-maturity/devops-maturity"
 tags = []
 features = []

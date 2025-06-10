@@ -23,7 +23,7 @@ languages:
     params:
       weight: 1
       languageName: "English"
-      title: Conventional Branch
+      title: DevOps Maturity
       description: A specification for adding human and machine readable meaning to branch
       actions:
       - label: Quick Summary

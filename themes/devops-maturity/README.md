@@ -1,4 +1,4 @@
-# hugo Conventional Branch theme
+# hugo DevOps Maturity theme
 Copy hugo-devops-maturity-theme inside your my-hugo-site/theme
 
 ## config.yaml example
@@ -6,7 +6,7 @@ All config params are optionals.
 ```yaml
 baseURL: 'https://devops-maturity.github.io/'
 languageCode: en-us
-title: Conventional Branch
+title: DevOps Maturity
 theme: devops-maturity
 
 # Language

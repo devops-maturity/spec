@@ -4,11 +4,11 @@ aliases: ["/en/"]
 layout: single
 ---
 
-# Conventional Branch 1.0.0
+# DevOps Maturity 1.0.0
 
 ## Summary
 
-Conventional Branch refers to a structured and standardized naming convention for Git branches which aims to make branch more readable and actionable. We've suggested some branch prefixes you might want to use but you can also specify your own naming convention. A consistent naming convention makes it easier to identify branches by type.
+DevOps Maturity refers to a structured and standardized naming convention for Git branches which aims to make branch more readable and actionable. We've suggested some branch prefixes you might want to use but you can also specify your own naming convention. A consistent naming convention makes it easier to identify branches by type.
 
 ### Key Points
 

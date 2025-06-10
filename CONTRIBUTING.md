@@ -50,10 +50,6 @@ pull request for each branch.
 
 This allow us to review and pull in new features or improvements individually.
 
-## Style Guide
-
-All pull requests SHOULD adhere to the [DevOps Maturity specification](https://conventionalcommits.org/)
-
 ## License
 
 You must agree that your patch will be licensed under the Conventional Commit License, and when we change the license we will assume that you agreed with the change unless you object to the changes in time.

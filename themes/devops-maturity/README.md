@@ -6,7 +6,7 @@ All config params are optionals.
 ```yaml
 baseURL: 'https://devops-maturity.github.io/'
 languageCode: en-us
-title: DevOps Maturity
+title: DevOps Maturity Specification
 theme: devops-maturity
 
 # Language
@@ -27,9 +27,9 @@ params:
     image: 'https://path-to-image'
     actions:
     - label: Read the specs
-      url: 'https://github.com/devops-maturity/devops-maturity'
+      url: 'https://github.com/devops-maturity/specification'
     - label: GitHub
-      url: 'https://github.com/devops-maturity/devops-maturity'
+      url: 'https://github.com/devops-maturity/specification'
 
   license:
     title: License
@@ -40,20 +40,24 @@ params:
   footer:
     logos:
     - name: github
-      url: 'https://github.com/devops-maturity/devops-maturity'
+      url: 'https://github.com/devops-maturity/specification'
 ```
 
 ## Apply theme changes
+
 Development script
+
 ```ssh
 npm run start
 ```
 
 Production script
+
 ```ssh
 npm run build
 ```
 
 ## Shortcodes
+
 * banner-image
   * src (optional) | default: static/img/git-flow.png

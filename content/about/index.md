@@ -5,13 +5,11 @@ draft: false
 
 # About
 
-The DevOps Maturity specification was inspired by [Conventional Commits](https://www.conventionalcommits.org).
+The DevOps Maturity specification was inspired by [Conventional Branch](https://github.com/conventional-branch/conventional-branch).
 
 ## Tooling for DevOps Maturity
 
-* [commit-check](https://github.com/commit-check/commit-check): Commit Check supports checking commit messages, branch naming, committer name/email, commit signoff, customizing error messages, suggested commands and more.
-* [commit-check-action](https://github.com/commit-check/commit-check-action): A Github Action for checking commit message formatting, branch naming, committer name, email, commit signoff and more.
-* [VSCode DevOps Maturity](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add DevOps Maturity supports for VSCode.
+* [devops-maturity](https://pypi.org/project/devops-maturity): CLI tool for calculating DevOps Maturity score.
 
 ## Projects Using DevOps Maturity
 

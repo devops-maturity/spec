@@ -1,6 +1,7 @@
 # The Conventional Branch Specification
 
 [![Conventional Branch](https://img.shields.io/badge/Conventional%20Branch-1.0.0-blue)](https://github.com/conventional-branch/conventional-branch)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fconventional-branch.github.io%2F)
 
 The Conventional Branch specification defines a naming convention that brings order to your development workflow — whether you're working solo or with a team.
 

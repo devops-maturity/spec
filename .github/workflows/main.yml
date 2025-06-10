@@ -64,9 +64,5 @@ jobs:
         # below accordingly.
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: devops-maturity/devops-maturity.github.io
-          publish_branch: main
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

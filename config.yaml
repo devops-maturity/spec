@@ -1,6 +1,6 @@
 baseURL: '/'
 languageCode: en-us
-theme: conventional-branch
+theme: devops-maturity
 # defaultContentLanguageInSubdir: true
 defaultContentLanguage: "en"
 
@@ -15,7 +15,7 @@ params:
   footer:
     logos:
     - name: github
-      url: 'https://github.com/conventional-branch/conventional-branch'
+      url: 'https://github.com/devops-maturity/devops-maturity'
 
 # Languages parameters
 languages:
@@ -31,7 +31,7 @@ languages:
       - label: Full Specification
         url: '#specification'
       - label: Contribute
-        url: 'https://github.com/conventional-branch/conventional-branch'
+        url: 'https://github.com/devops-maturity/devops-maturity'
       # versions:
       #   current: v1.0.0
   zh:
@@ -46,4 +46,4 @@ languages:
       - label: 完整规范
         url: '#规范'
       - label: 贡献
-        url: 'https://github.com/conventional-branch/conventional-branch'
+        url: 'https://github.com/devops-maturity/devops-maturity'

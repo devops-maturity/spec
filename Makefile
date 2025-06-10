@@ -12,9 +12,9 @@ serve-site-dev:
 
 compile-assets:
 	echo "Compiling assets"
-	cd themes/conventional-branch && npm install && npm run build
+	cd themes/devops-maturity && npm install && npm run build
 	echo "Assets compiled"
 
 compile-assets-dev:
 	echo "Compiling assets"
-	cd themes/conventional-branch && npm install && npm run start &
+	cd themes/devops-maturity && npm install && npm run start &

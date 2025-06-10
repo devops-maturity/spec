@@ -30,7 +30,7 @@ class App {
   }
 
   removeLoadingClass() {
-    document.body.classList.remove('conventional-branch--loading');
+    document.body.classList.remove('devops-maturity--loading');
   }
 }
 

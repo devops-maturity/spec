@@ -3,7 +3,7 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: /themes/conventional-branch/
+  directory: /themes/devops-maturity/
   schedule:
     interval: monthly
   groups:

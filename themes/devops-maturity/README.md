@@ -1,13 +1,13 @@
-# hugo Conventional Branch theme
-Copy hugo-conventional-branch-theme inside your my-hugo-site/theme
+# hugo DevOps Maturity theme
+Copy hugo-devops-maturity-theme inside your my-hugo-site/theme
 
 ## config.yaml example
 All config params are optionals.
 ```yaml
-baseURL: 'https://conventional-branch.github.io/'
+baseURL: 'https://devops-maturity.github.io/'
 languageCode: en-us
-title: Conventional Branch
-theme: conventional-branch
+title: DevOps Maturity Specification
+theme: devops-maturity
 
 # Language
 defaultContentLanguageInSubdir: true
@@ -27,9 +27,9 @@ params:
     image: 'https://path-to-image'
     actions:
     - label: Read the specs
-      url: 'https://github.com/conventional-branch/conventional-branch'
+      url: 'https://github.com/devops-maturity/specification'
     - label: GitHub
-      url: 'https://github.com/conventional-branch/conventional-branch'
+      url: 'https://github.com/devops-maturity/specification'
 
   license:
     title: License
@@ -40,20 +40,24 @@ params:
   footer:
     logos:
     - name: github
-      url: 'https://github.com/conventional-branch/conventional-branch'
+      url: 'https://github.com/devops-maturity/specification'
 ```
 
 ## Apply theme changes
+
 Development script
+
 ```ssh
 npm run start
 ```
 
 Production script
+
 ```ssh
 npm run build
 ```
 
 ## Shortcodes
+
 * banner-image
   * src (optional) | default: static/img/git-flow.png

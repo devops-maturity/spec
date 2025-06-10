@@ -1,0 +1,7 @@
+name = "DevOps Maturity specification"
+license = "MIT"
+description = "Hugo theme for DevOps Maturity website"
+homepage = "https://github.com/devops-maturity/specification"
+tags = []
+features = []
+min_version = "0.42"

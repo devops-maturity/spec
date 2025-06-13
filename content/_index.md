@@ -58,4 +58,3 @@ Your score will generate one of the following badges:
 ### What tools can be used to caculate your score?
 
 You can used [devops-maturity](https://pypi.org/project/devops-maturity) CLI to caculate your score.
-

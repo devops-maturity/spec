@@ -1,7 +1,7 @@
 # The DevOps Maturity Specification
 
 [![DevOps Maturity](https://img.shields.io/badge/DevOps%20Maturity%20Specification-1.0.0-yellow)](https://github.com/devops-maturity/devops-maturity)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fdevops-maturity.github.io%2Fspecification)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fdevops-maturity.github.io%2Fspecification)](https://devops-maturity.github.io/specification/)
 
 The DevOps Maturity specification is standardized to assess the maturity of DevOps practices. It is a set of questions and answers to help you measure and improve your DevOps maturity.
 

@@ -21,4 +21,4 @@ The DevOps Maturity specification was inspired by [Conventional Branch](https://
 
 [![DevOps Maturity](https://img.shields.io/badge/DevOps%20Maturity%20Specification-1.0.0-yellow)](https://github.com/devops-maturity/devops-maturity)
 
-_Want your project on this list?_ [send a pull request](https://github.com/devops-maturity/devops-maturity/pulls).
+_Want your project on this list?_ [send a pull request](https://github.com/devops-maturity/specification/pulls).

@@ -372,7 +372,7 @@ main article.markdown-body h1 {
 }
 main article.markdown-body h1, main article.markdown-body h2, main article.markdown-body h3, main article.markdown-body h4, main article.markdown-body h5, main article.markdown-body h6, main article.markdown-body a {
   font-weight: bold;
-  color: #7fa5ec;
+  color: #64746a;
 }
 main article.markdown-body a.anchorjs-link:hover {
   text-decoration: none;

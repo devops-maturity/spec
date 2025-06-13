@@ -24,7 +24,7 @@ languages:
       weight: 1
       languageName: "English"
       title: DevOps Maturity
-      description: Assesment of DevOps maturity
+      description: A Specification for the Assessment of DevOps Maturity
       actions:
       - label: Quick Summary
         url: '#summary'

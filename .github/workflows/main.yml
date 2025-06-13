@@ -51,11 +51,12 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: deployment
         run: make all
-      - name: Upload artifact
+      - name: Upload static files as artifact
         if: github.event_name != 'pull_request'
+        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: public
 
   deploy:
     needs: build

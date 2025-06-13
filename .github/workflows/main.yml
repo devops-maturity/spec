@@ -61,12 +61,15 @@ jobs:
   deploy:
     needs: build
     # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+    uses: peaceiris/actions-gh-pages@v4
+    # If you're changing the branch from main,
+    # also change the `main` in `refs/heads/main`
+    # below accordingly.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    with:
+      personal_token: ${{ secrets.PERSONAL_TOKEN }}
+      external_repository: devops-maturity/devops-maturity.github.io
+      publish_branch: main
+      user_name: 'github-actions[bot]'
+      user_email: 'github-actions[bot]@users.noreply.github.com'
+      publish_dir: ./public

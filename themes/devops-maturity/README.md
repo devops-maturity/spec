@@ -27,9 +27,9 @@ params:
     image: 'https://path-to-image'
     actions:
     - label: Read the specs
-      url: 'https://github.com/devops-maturity/specification'
+      url: 'https://github.com/devops-maturity/spec'
     - label: GitHub
-      url: 'https://github.com/devops-maturity/specification'
+      url: 'https://github.com/devops-maturity/spec'
 
   license:
     title: License
@@ -40,7 +40,7 @@ params:
   footer:
     logos:
     - name: github
-      url: 'https://github.com/devops-maturity/specification'
+      url: 'https://github.com/devops-maturity/spec'
 ```
 
 ## Apply theme changes

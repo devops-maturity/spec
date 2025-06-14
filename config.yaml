@@ -15,7 +15,7 @@ params:
   footer:
     logos:
     - name: github
-      url: 'https://github.com/devops-maturity/specification'
+      url: 'https://github.com/devops-maturity/spec'
 
 # Languages parameters
 languages:
@@ -31,7 +31,7 @@ languages:
       - label: Full Specification
         url: '#specification'
       - label: Contribute
-        url: 'https://github.com/devops-maturity/specification'
+        url: 'https://github.com/devops-maturity/spec'
       # versions:
       #   current: v1.0.0
   zh:
@@ -46,4 +46,4 @@ languages:
       - label: 完整规范
         url: '#规范'
       - label: 贡献
-        url: 'https://github.com/devops-maturity/specification'
+        url: 'https://github.com/devops-maturity/spec'

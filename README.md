@@ -7,7 +7,7 @@ The DevOps Maturity specification is standardized to assess the maturity of DevO
 
 ## 🎉 Show Your Support
 
-If you find this useful, consider giving it a ⭐️ on [GitHub](https://github.com/devops-maturity/specification)! Your support helps others discover and adopt the spec.
+If you find this useful, consider giving it a ⭐️ on [GitHub](https://github.com/devops-maturity/spec)! Your support helps others discover and adopt the spec.
 
 ## 🛡 Badges!
 

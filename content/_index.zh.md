@@ -16,39 +16,41 @@ DevOps 成熟度规范是一套 DevOps 最佳实践指南，旨在提升软件�
 
 必选 → 🟢  可选 → 🟡
 
-| **类别**              | **评估项**                                 | **要求** | **权重** |
-|-----------------------|--------------------------------------------|----------|----------|
-| CI/CD 基础            | 构建指定分支                               | 🟢       | 1        |
-|                       | Pull Request 自动构建                      | 🟢       | 1        |
-|                       | 干净环境构建                               | 🟡       | 0.5      |
-| 质量保障              | 自动化测试：功能测试                       | 🟢       | 1        |
-|                       | 自动化测试：性能测试                       | 🟢       | 1        |
-|                       | 代码覆盖率                                 | 🟡       | 0.5      |
-|                       | 可访问性测试                               | 🟡       | 0.5      |
-| 安全                  | 安全扫描                                   | 🟢       | 1        |
-|                       | 许可证扫描                                 | 🟡       | 0.5      |
-| 供应链安全            | 构建链文档化                               | 🟢       | 1        |
-|                       | CICD 流水线代码化                          | 🟢       | 1        |
-|                       | 制品签名                                   | 🟡       | 0.5      |
-|                       | 包管理器制品下载                           | 🟡       | 0.5      |
-| 分析                  | 质量门禁                                   | 🟡       | 0.5      |
-|                       | 代码风格检查                               | 🟡       | 0.5      |
-|                       | 静态代码分析                               | 🟡       | 0.5      |
-|                       | 动态代码分析                               | 🟡       | 0.5      |
-| 报告                  | 邮件/Slack 报告功能                        | 🟢       | 1        |
+| **类别**        | **评估项**                | **要求** | **权重** |
+|-----------------|--------------------------|----------|----------|
+| CI/CD 基础      | 构建指定分支               | 🟢       | 1        |
+|                 | Pull Request 自动构建     | 🟢       | 1        |
+|                 | 干净环境构建               | 🟡       | 0.5      |
+| 质量保障         | 自动化测试：功能测试       | 🟢       | 1        |
+|                 | 自动化测试：性能测试        | 🟢       | 1        |
+|                 | 代码覆盖率                 | 🟡       | 0.5      |
+|                 | 可访问性测试               | 🟡       | 0.5      |
+| 安全            | 安全扫描                   | 🟢       | 1        |
+|                 | 许可证扫描                 | 🟡       | 0.5      |
+| 供应链安全       | 构建链文档化               | 🟢       | 1        |
+|                 | CICD 流水线代码化          | 🟢       | 1        |
+|                 | 制品签名                   | 🟡       | 0.5      |
+|                 | 包管理器制品下载           | 🟡       | 0.5      |
+| 分析            | 质量门禁                   | 🟡       | 0.5      |
+|                 | 代码风格检查               | 🟡       | 0.5      |
+|                 | 静态代码分析               | 🟡       | 0.5      |
+|                 | 动态代码分析               | 🟡       | 0.5      |
+| 报告            | 邮件/Slack 报告功能        | 🟢       | 1        |
 
 ## 徽章等级
 
 你的得分将获得以下徽章之一：
 
-* WIP: 0% ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)
-* PASSING: 1–49% ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg)
-* BRONZE: 50–69% ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg)
-* SILVER: 70–89% ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg)
-* GOLD: 90–100% ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg)
+| 等级   | 分数范围 | 徽章 |
+|-------|---------|-------|
+| WIP   | 0%  | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg) |
+| PASSING | 1–49% | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
+| BRONZE  | 50–69% | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
+| SILVER  | 70–89% | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
+| GOLD    | 90–100% | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
 
 ## 常见问题
 
 ### 如何计算得分？
 
-您可以使用 [devops-maturity](https://pypi.org/project/devops-maturity) CLI 工具自动计算得分。
+你可以使用 [devops-maturity](https://github.com/devops-maturity/devops-maturity) 项目中的 Web UI 和 CLI 工具来计算你的 DevOps 成熟度得分。

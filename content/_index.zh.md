@@ -41,11 +41,11 @@ DevOps 成熟度规范是一套 DevOps 最佳实践指南，旨在提升软件�
 
 你的得分将获得以下徽章之一：
 
-* WIP: 0%
-* PASSING: 1–49%
-* BRONZE: 50–69%
-* SILVER: 70–89%
-* GOLD: 90–100%
+* WIP: 0% ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)
+* PASSING: 1–49% ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg)
+* BRONZE: 50–69% ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg)
+* SILVER: 70–89% ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg)
+* GOLD: 90–100% ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg)
 
 ## 常见问题
 

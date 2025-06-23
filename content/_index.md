@@ -16,42 +16,55 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 
 ### DevOps Maturity Criteria
 
-must have → 🟢
-nice to have → 🟡
+MUST have → 🟢 (weight 1)
+NICE to have → 🟡 (weight 0.5)
 
-| **Category**        | **Criteria**                               | **Req.** | **Weight** |
-|---------------------|--------------------------------------------|----------|------------|
-| CI/CD Basic         | Build a specific branch                    | 🟢       | 1          |
-|                     | Build upon pull request                    | 🟢       | 1          |
-|                     | Build from clean environment               | 🟡       | 0.5        |
-| Quality             | Automated Testing: Functional testing      | 🟢       | 1          |
-|                     | Automated Testing: Performance testing     | 🟢       | 1          |
-|                     | Code Coverage                              | 🟡       | 0.5        |
-|                     | Accessibility Testing                      | 🟡       | 0.5        |
-| Security            | Security scan                              | 🟢       | 1          |
-|                     | License scan                               | 🟡       | 0.5        |
-| Secure Supply Chain | Documented Build Chain                     | 🟢       | 1          |
-|                     | CICD as coded                              | 🟢       | 1          |
-|                     | Artifacts are signed                       | 🟡       | 0.5        |
-|                     | Artifactory download for Package Managers  | 🟡       | 0.5        |
-| Analysis            | Quality Gate                               | 🟡       | 0.5        |
-|                     | Code Lint                                  | 🟡       | 0.5        |
-|                     | Static code analysis                       | 🟡       | 0.5        |
-|                     | Dynamic code analysis                      | 🟡       | 0.5        |
-| Reporting           | Email/Slack reporting functionality        | 🟢       | 1          |
+| **Category**       |**Code**| **Criteria**                               | **Req.**|
+|--------------------|--------|--------------------------------------------|---------|
+| Basics             | D101   | Build a specific branch                    | 🟢     |
+|                    | D102   | Build upon pull request                    | 🟢     |
+|                    | D103   | Build from clean environment               | 🟡     |
+| Quality            | D201   | Automated Testing: Functional testing      | 🟢     |
+|                    | D202   | Automated Testing: Performance testing     | 🟡     |
+|                    | D203   | Code Coverage                              | 🟡     |
+|                    | D204   | Accessibility Testing                      | 🟡     |
+| Security           | D301   | Security scan                              | 🟢     |
+|                    | D302   | License scan                               | 🟡     |
+| Secure Supply Chain| D401   | Documented Build Chain                     | 🟢     |
+|                    | D402   | CI/CD as coded                             | 🟢     |
+|                    | D403   | Artifacts are signed                       | 🟡     |
+|                    | D404   | Artifactory download for Package Managers  | 🟡     |
+| Analysis           | D501   | Static code analysis                       | 🟡     |
+|                    | D502   | Dynamic code analysis                      | 🟡     |
+|                    | D503   | Quality Gate                               | 🟡     |
+|                    | D504   | Code Lint                                  | 🟡     |
+| Reporting          | D601   | Email/Slack reporting functionality        | 🟢     |
+|                    | D602   | Attached Reports                           | 🟢     |
+
+
+### Code Groupings
+
+|**Code**| **Description**|
+|-------|---------------|
+| D1xx   | Basics         |
+| D2xx   | Quality        |
+| D3xx   | Security      |
+| D4xx   | Secure Supply Chain |
+| D5xx   | Analysis       |
+| D6xx   | Reporting      |
 
 
 ## Badge Levels
 
 Your score will generate one of the following badges:
 
-| Level   | Score Range  | Badge |
-|---------|--------------| ------|
-| WIP     | 0%           | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
-| PASSING | 1–49%        | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
-| BRONZE  | 50–69%       | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
-| SILVER  | 70–89%       | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
-| GOLD    | 90–100%      | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
+| Level   | Score Range | Badge |
+|---------|-------------| ------|
+| WIP     | 0%          | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
+| PASSING | 1–49%       | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
+| BRONZE  | 50–69%      | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
+| SILVER  | 70–89%      | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
+| GOLD    | 90–100%     | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
 
 ---
 
@@ -60,3 +73,9 @@ Your score will generate one of the following badges:
 ### What tools can be used to caculate your score?
 
 You can used [devops-maturity](https://github.com/devops-maturity/devops-maturity) which support web UI and CLI to calculate your score automatically.
+
+### What is the difference between OpenSSF Best Practices and DevOps Maturity?
+
+[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects, while DevOps Maturity applies to both open source and internal enterprise projects.
+
+DevOps Maturity offers a web UI and CLI for automatically calculating your maturity score. OpenSSF Best Practices is web-based SaaS and may not support internal deployment.

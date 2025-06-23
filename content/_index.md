@@ -16,8 +16,8 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 
 ### DevOps Maturity Criteria
 
-MUST have → 🟢 (weight 1)
-NICE to have → 🟡 (weight 0.5)
+* MUST have → 🟢 (weight 1)
+* NICE to have → 🟡 (weight 0.5)
 
 | **Category**       |**Code**| **Criteria**                               | **Req.**|
 |--------------------|--------|--------------------------------------------|---------|

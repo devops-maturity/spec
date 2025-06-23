@@ -14,11 +14,6 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 
 ## Specification
 
-### DevOps Maturity Criteria
-
-* 🟢 MUST have (weight 1)
-* 🟡 NICE have (weight 0.5)
-
 | **Category**       |**Code**| **Criteria**                     | **Req.**|
 |--------------------|--------|----------------------------------|---------|
 | Basics             | D101   | Branch Builds[^1]                | 🟢     |
@@ -41,7 +36,10 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 | Reporting          | D601   | Notifications & Alerts[^18]      | 🟢     |
 |                    | D602   | Attached Reports[^19]            | 🟢     |
 
-For details on maturity code, please refer to [Maturity Code Map](https://devops-maturity.github.io/about/#maturity-code-map).
+> 🟢 MUST have (weight 1)
+> 🟡 NICE have (weight 0.5)
+> 
+> For details on maturity code, please refer to [Maturity Code Map](https://devops-maturity.github.io/about/#maturity-code-map).
 
 ## Badge Levels
 
@@ -86,4 +84,3 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 [^17]: Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
 [^18]: Supports notification systems such as email or Slack alerts.
 [^19]: Supports attaching detailed reports to builds, such as test results or coverage metrics.
-

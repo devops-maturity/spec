@@ -16,8 +16,8 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 
 ### DevOps Maturity Criteria
 
-* MUST have → 🟢 (weight 1)
-* NICE to have → 🟡 (weight 0.5)
+* 🟢 MUST have (weight 1)
+* 🟡 NICE have (weight 0.5)
 
 | **Category**       |**Code**| **Criteria**                               | **Req.**|
 |--------------------|--------|--------------------------------------------|---------|
@@ -28,7 +28,7 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 |                    | D202   | Automated Testing: Performance testing     | 🟡     |
 |                    | D203   | Code Coverage                              | 🟡     |
 |                    | D204   | Accessibility Testing                      | 🟡     |
-| Security           | D301   | Security scan                              | 🟢     |
+| Security           | D301   | Security scan[^1]                          | 🟢     |
 |                    | D302   | License scan                               | 🟡     |
 | Supply Chain Security| D401 | Documented Build Chain                     | 🟢     |
 |                    | D402   | CI/CD as coded                             | 🟢     |
@@ -41,17 +41,18 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 | Reporting          | D601   | Email/Slack reporting functionality        | 🟢     |
 |                    | D602   | Attached Reports                           | 🟢     |
 
+[^1]: Security scan includes vulnerability scanning, dependency scanning, and secret scanning.
 
 ### Code Groupings
 
-|**Code**| **Description**|
-|-------|---------------|
-| D1xx   | Basics         |
-| D2xx   | Quality        |
+|**Code**|**Description**|
+|--------|---------------|
+| D1xx   | Basics        |
+| D2xx   | Quality       |
 | D3xx   | Security      |
 | D4xx   | Supply Chain Security|
-| D5xx   | Analysis       |
-| D6xx   | Reporting      |
+| D5xx   | Analysis      |
+| D6xx   | Reporting     |
 
 
 ## Badge Levels
@@ -76,4 +77,4 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
-[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices is a web-based SaaS and does not support internal deployment.
+[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.

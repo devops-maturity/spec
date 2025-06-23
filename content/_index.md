@@ -30,7 +30,7 @@ NICE to have → 🟡 (weight 0.5)
 |                    | D204   | Accessibility Testing                      | 🟡     |
 | Security           | D301   | Security scan                              | 🟢     |
 |                    | D302   | License scan                               | 🟡     |
-| Secure Supply Chain| D401   | Documented Build Chain                     | 🟢     |
+| Supply Chain Security| D401 | Documented Build Chain                     | 🟢     |
 |                    | D402   | CI/CD as coded                             | 🟢     |
 |                    | D403   | Artifacts are signed                       | 🟡     |
 |                    | D404   | Artifactory download for Package Managers  | 🟡     |
@@ -49,7 +49,7 @@ NICE to have → 🟡 (weight 0.5)
 | D1xx   | Basics         |
 | D2xx   | Quality        |
 | D3xx   | Security      |
-| D4xx   | Secure Supply Chain |
+| D4xx   | Supply Chain Security|
 | D5xx   | Analysis       |
 | D6xx   | Reporting      |
 
@@ -76,6 +76,4 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
-[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects, while DevOps Maturity applies to both open source and internal enterprise projects.
-
-DevOps Maturity offers a web UI and CLI for automatically calculating your maturity score. OpenSSF Best Practices is web-based SaaS and may not support internal deployment.
+[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects, while DevOps Maturity applies to both open source and internal enterprise projects. DevOps Maturity offers a web UI and CLI for automatically calculating your maturity score. OpenSSF Best Practices is web-based SaaS and may not support internal deployment.

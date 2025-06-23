@@ -76,4 +76,4 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
-[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects, while DevOps Maturity applies to both open source and internal enterprise projects. DevOps Maturity offers a web UI and CLI for automatically calculating your maturity score. OpenSSF Best Practices is web-based SaaS and may not support internal deployment.
+[OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices is a web-based SaaS and does not support internal deployment.

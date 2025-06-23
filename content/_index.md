@@ -41,6 +41,8 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 | Reporting          | D601   | Notifications & Alerts[^18]      | 🟢     |
 |                    | D602   | Attached Reports[^19]            | 🟢     |
 
+For details on maturity code, please refer to [Maturity Code Map](https://devops-maturity.github.io/about/#maturity-code-map).
+
 ## Badge Levels
 
 Your score will generate one of the following badges:

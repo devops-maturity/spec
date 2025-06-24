@@ -8,7 +8,15 @@ layout: single
 
 ## Summary
 
-DevOps Maturity Specification is a set of guidelines for DevOps best practices, focusing on improving collaboration, automation, and efficiency in software development and operations.
+DevOps Maturity Specification provides guidelines for DevOps best practices, aiming to enhance collaboration, automation, and efficiency across software development and operations.
+
+## Key Points
+
+- **Purpose**: Help organizations and teams assess DevOps practices, align on best practices, and drive continuous improvement.
+- **Scope**: Covers key DevOps domains including build, testing, security, supply chain, analysis, and reporting.
+- **Maturity Levels**: Tracks progress with clear visual badges (See [Badge Levels](#badge-levels)) to provide an easy and intuitive overview.
+- **Scoring**: Criteria are weighted as MUST (🟢) or NICE (🟡) enabling clear and actionable evaluation.
+- **Tooling**: Works with [devops-maturity](https://github.com/devops-maturity/devops-maturity) to automate scoring via Web UI or CLI.
 
 ---
 
@@ -36,10 +44,26 @@ DevOps Maturity Specification is a set of guidelines for DevOps best practices, 
 | Reporting          | D601   | Notifications & Alerts[^18]      | 🟢     |
 |                    | D602   | Attached Reports[^19]            | 🟢     |
 
-> 🟢 MUST have (weight 1)
-> 🟡 NICE have (weight 0.5)
-> 
-> For details on maturity code, please refer to [Maturity Code Map](https://devops-maturity.github.io/about/#maturity-code-map).
+- 🟢 MUST have (weight 1)
+- 🟡 NICE have (weight 0.5)
+
+### Maturity Code Map
+
+|**Code**|**Description**|
+|--------|---------------|
+| D1xx   | Basics        |
+| D2xx   | Quality       |
+| D3xx   | Security      |
+| D4xx   | Supply Chain Security|
+| D5xx   | Analysis      |
+| D6xx   | Reporting     |
+
+- All criteria codes are prefixed by domain letter (e.g., `D` for DevOps)
+- Code format: `DXYZ`
+  - `D` = Domain (DevOps)
+  - `X` = Category (e.g., 1: Basics, 2: Quality)
+  - `YZ` = Criteria number
+
 
 ## Badge Levels
 

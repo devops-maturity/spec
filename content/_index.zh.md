@@ -8,49 +8,162 @@ layout: single
 
 ## 概述
 
-DevOps 成熟度规范是一套 DevOps 最佳实践指南，旨在提升软件开发与运维的协作、自动化和效率。
+DevOps 成熟度规范为 DevOps 最佳实践提供指导，旨在提升软件开发与运维过程中的协作、自动化和效率。
+
+## 关键要点
+
+- **目标**：帮助组织和团队评估 DevOps 实践，对齐最佳实践，并推动持续改进。
+- **范围**：涵盖 DevOps 的关键领域，包括构建、测试、安全、供应链、分析和报告。
+- **成熟度等级**：通过清晰的可视化徽章（见[徽章等级](#徽章等级)）跟踪进展，提供直观易懂的概览。
+- **评分方式**：评估项分为必选（🟢）和可选（🟡），实现清晰且可操作的评估。
+- **工具支持**：可结合 [devops-maturity](https://github.com/devops-maturity/devops-maturity) 工具，通过 Web UI 或 CLI 自动化评分。
+
+---
 
 ## 规范
 
 ### DevOps 成熟度评估标准
 
-必选 → 🟢  可选 → 🟡
+| **类别**  | **代码** | **评估项**                       | **要求** |
+|-----------|----------|---------------------------------|----------|
+| 基础      | D101     | [分支构建](#d101-分支构建)        | 🟢       |
+|           | D102     | [PR 构建](#d102-pr-构建)         | 🟢       |
+|           | D103     | [干净环境构建](#d103-干净环境构建) | 🟡       |
+| 质量      | D201     | [单元测试](#d201-单元测试)        | 🟢       |
+|           | D202     | [功能测试](#d202-功能测试)       | 🟢       |
+|           | D203     | [性能测试](#d203-性能测试)       | 🟡       |
+|           | D204     | [代码覆盖率](#d204-代码覆盖率)    | 🟡       |
+|           | D205     | [可访问性测试](#d205-可访问性测试) | 🟡       |
+| 安全      | D301     | [安全扫描](#d301-安全扫描)        | 🟢       |
+|           | D302     | [许可证扫描](#d302-许可证扫描)    | 🟡       |
+| 供应链安全 | D401     | [构建过程文档化](#d401-构建过程文档化) | 🟢       |
+|           | D402     | [CI/CD 代码化](#d402-ci-cd-代码化) | 🟢       |
+|           | D403     | [制品签名](#d403-制品签名)        | 🟡       |
+|           | D404     | [依赖锁定](#d404-依赖锁定)        | 🟡       |
+| 分析      | D501     | [静态代码分析](#d501-静态代码分析) | 🟡       |
+|           | D502     | [动态代码分析](#d502-动态代码分析) | 🟡       |
+|           | D503     | [代码风格检查](#d503-代码风格检查) | 🟡       |
+| 报告      | D601     | [通知与告警](#d601-通知与告警)     | 🟢       |
+|           | D602     | [附加报告](#d602-附加报告)        | 🟢       |
 
-| **类别**        | **评估项**                | **要求** | **权重** |
-|-----------------|--------------------------|----------|----------|
-| CI/CD 基础      | 构建指定分支               | 🟢       | 1        |
-|                 | Pull Request 自动构建     | 🟢       | 1        |
-|                 | 干净环境构建               | 🟡       | 0.5      |
-| 质量保障         | 自动化测试：功能测试       | 🟢       | 1        |
-|                 | 自动化测试：性能测试        | 🟢       | 1        |
-|                 | 代码覆盖率                 | 🟡       | 0.5      |
-|                 | 可访问性测试               | 🟡       | 0.5      |
-| 安全            | 安全扫描                   | 🟢       | 1        |
-|                 | 许可证扫描                 | 🟡       | 0.5      |
-| 供应链安全       | 构建链文档化               | 🟢       | 1        |
-|                 | CICD 流水线代码化          | 🟢       | 1        |
-|                 | 制品签名                   | 🟡       | 0.5      |
-|                 | 包管理器制品下载           | 🟡       | 0.5      |
-| 分析            | 质量门禁                   | 🟡       | 0.5      |
-|                 | 代码风格检查               | 🟡       | 0.5      |
-|                 | 静态代码分析               | 🟡       | 0.5      |
-|                 | 动态代码分析               | 🟡       | 0.5      |
-| 报告            | 邮件/Slack 报告功能        | 🟢       | 1        |
+- 🟢 必选（权重 1）
+- 🟡 可选（权重 0.5）
 
 ## 徽章等级
 
 你的得分将获得以下徽章之一：
 
-| 等级   | 分数范围 | 徽章 |
-|-------|---------|-------|
-| WIP   | 0%  | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg) |
-| PASSING | 1–49% | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
-| BRONZE  | 50–69% | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
-| SILVER  | 70–89% | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
-| GOLD    | 90–100% | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
+| 等级    | 分数范围   | 徽章 |
+|---------|-----------|------|
+| WIP     | 0%        | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
+| PASSING | 1–49%     | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
+| BRONZE  | 50–69%    | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
+| SILVER  | 70–89%    | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
+| GOLD    | 90–100%   | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
 
-## 常见问题
+## 评估项代码说明
 
-### 如何计算得分？
+|**代码**|**说明**|
+|--------|--------|
+| D1xx   | 基础   |
+| D2xx   | 质量   |
+| D3xx   | 安全   |
+| D4xx   | 供应链安全 |
+| D5xx   | 分析   |
+| D6xx   | 报告   |
 
-你可以使用 [devops-maturity](https://github.com/devops-maturity/devops-maturity) 项目中的 Web UI 和 CLI 工具来计算你的 DevOps 成熟度得分。
+- 所有评估项代码以领域字母为前缀（如 `D` 代表 DevOps）
+- 代码格式：`DXYZ`
+  - `D` = 领域（DevOps）
+  - `X` = 类别（如 1: 基础, 2: 质量）
+  - `YZ` = 评估项编号
+
+## 评估项详情
+
+#### D101 分支构建
+
+支持从任意指定分支进行构建，而不仅限于 `main` 分支。
+
+#### D102 PR 构建
+
+支持对 Pull Request（PR）进行构建，不仅限于直接推送到分支。
+
+#### D103 干净环境构建
+
+支持在干净环境（如容器或虚拟机）中进行构建。
+
+#### D201 单元测试
+
+支持单元测试，包括单元或组件级测试。
+
+#### D202 功能测试
+
+支持功能测试，如集成测试或端到端（E2E）测试。
+
+#### D203 性能测试
+
+支持性能测试，包括负载、压力或吞吐量测试。
+
+#### D204 代码覆盖率
+
+支持代码覆盖率测量，包括行、分支或函数覆盖率。
+
+#### D205 可访问性测试
+
+支持可访问性测试，符合如 WCAG 等标准。
+
+#### D301 安全扫描
+
+支持安全扫描，包括 SAST（静态应用安全测试）和 DAST（动态应用安全测试）。
+
+#### D302 许可证扫描
+
+支持许可证扫描，如 SPDX、FOSSology 或 license-checkers 等工具。
+
+#### D401 构建过程文档化
+
+提供构建过程文档，包括构建步骤、清单或可复现性说明。
+
+#### D402 CI/CD 代码化
+
+支持以代码形式定义 CI/CD 工作流，如流水线即代码或基础设施即代码。
+
+#### D403 制品签名
+
+支持制品签名（如 PGP 或 GPG），确保真实性和完整性。
+
+#### D404 依赖锁定
+
+支持依赖锁定或版本固定，确保可复现构建。
+
+#### D501 静态代码分析
+
+支持静态代码分析工具，如 SonarQube、Polaris 等。
+
+#### D502 动态代码分析
+
+支持动态分析，包括运行时行为分析或模糊测试。
+
+#### D503 代码风格检查
+
+支持代码风格检查，如 ESLint、Prettier 或 pre-commit 钩子。
+
+#### D601 通知与告警
+
+支持通知系统，如邮件或 Slack 告警。
+
+#### D602 附加报告
+
+支持将详细报告附加到构建，如测试结果或覆盖率指标。
+
+---
+
+## 常见问题解答
+
+### 如何自动计算成熟度得分？
+
+你可以使用 [devops-maturity](https://github.com/devops-maturity/devops-maturity)，该工具支持 Web UI 和 CLI，可自动计算你的成熟度得分。
+
+### OpenSSF Best Practices 和 DevOps Maturity 有什么区别？
+
+[OpenSSF Best Practices](https://www.bestpractices.dev/) 面向整个软件开发生命周期的开源项目，而 DevOps Maturity 专注于适用于开源和企业内部项目的 DevOps 实践。DevOps Maturity 提供 Web UI 和 CLI 两种自动化成熟度评分方式，而 OpenSSF Best Practices 仅提供基于 Web 的 SaaS 服务，不支持内部部署。

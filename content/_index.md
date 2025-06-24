@@ -167,23 +167,3 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
 [OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.
-
-<!-- [^1]: D101: Supports builds from any specific branch, not just the `main` branch.
-[^2]: D102: Supports building pull requests (PRs), not limited to direct pushes to branches.
-[^3]: D103: Supports building in clean environments, such as containers or virtual machines (VMs).
-[^4]: D104: Supports unit testing, including unit or component-level tests.
-[^5]: D105: Supports functional testing, such as integration or end-to-end (E2E) tests.
-[^6]: D106: Supports performance testing, including load, stress, or throughput testing.
-[^7]: D107: Supports measuring code coverage, including line, branch, or function coverage.
-[^8]: D108: Supports accessibility testing for standards compliance, such as WCAG.
-[^9]: D109: Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).
-[^10]: D110: Supports license scanning using tools like SPDX, FOSSology, or license-checkers.
-[^11]: D111: Provides a documented build process, including build steps, manifests, or reproducibility details.
-[^12]: D112: Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.
-[^13]: D113: Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.
-[^14]: D114: Supports dependency pinning or version locking to ensure reproducible builds.
-[^15]: D115: Supports static code analysis tools such as SonarQube, Polaris, or similar.
-[^16]: D116: Supports dynamic analysis, including runtime behavior analysis or fuzz testing.
-[^17]: D117: Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
-[^18]: D118: Supports notification systems such as email or Slack alerts.
-[^19]: D119: Supports attaching detailed reports to builds, such as test results or coverage metrics. -->

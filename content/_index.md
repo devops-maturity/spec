@@ -22,32 +22,46 @@ DevOps Maturity Specification provides guidelines for DevOps best practices, aim
 
 ## Specification
 
-| **Category**       |**Code**| **Criteria**                     | **Req.**|
-|--------------------|--------|----------------------------------|---------|
-| Basics             | D101   | Branch Builds[^1]                | 🟢     |
-|                    | D102   | Pull Request Builds[^2]          | 🟢     |
-|                    | D103   | Clean Build Environments[^3]     | 🟡     |
-| Quality            | D201   | Unit Testing[^4]                 | 🟢     |
-|                    | D202   | Functional Testing[^5]           | 🟢     |
-|                    | D203   | Performance Testing[^6]          | 🟡     |
-|                    | D204   | Code Coverage[^7]                | 🟡     |
-|                    | D205   | Accessibility Testing[^8]        | 🟡     |
-| Security           | D301   | Security Scanning[^9]            | 🟢     |
-|                    | D302   | License Scanning[^10]            | 🟡     |
-| Supply Chain Security| D401 | Documented Build Process[^11]    | 🟢     |
-|                    | D402   | CI/CD as Code[^12]               | 🟢     |
-|                    | D403   | Artifact Signing[^13]            | 🟡     |
-|                    | D404   | Dependency Pinning[^14]          | 🟡     |
-| Analysis           | D501   | Static Code Analysis[^15]        | 🟡     |
-|                    | D502   | Dynamic Code Analysis[^16]       | 🟡     |
-|                    | D504   | Code Linting[^17]                | 🟡     |
-| Reporting          | D601   | Notifications & Alerts[^18]      | 🟢     |
-|                    | D602   | Attached Reports[^19]            | 🟢     |
+| **Category**       |  **Code**| **Criteria**                                               |**Req.**|
+|--------------------|----------|------------------------------------------------------------|--------|
+| Basics             | D101     | [Branch Builds](#d101-branch-builds)                       | 🟢    |
+|                    | D102     | [Pull Request Builds](#d102-pull-request-builds)           | 🟢    |
+|                    | D103     | [Clean Build Environments](#d103-clean-build-environments) | 🟡    |
+| Quality            | D201     | [Unit Testing](#d201-unit-testing)                         | 🟢    |
+|                    | D202     | [Functional Testing](#d202-functional-testing)             | 🟢    |
+|                    | D203     | [Performance Testing](#d203-performance-testing)           | 🟡    |
+|                    | D204     | [Code Coverage](#d204-code-coverage)                       | 🟡    |
+|                    | D205     | [Accessibility Testing](#d205-accessibility-testing)       | 🟡    |
+| Security           | D301     | [Security Scanning](#d301-security-scanning)               | 🟢    |
+|                    | D302     | [License Scanning](#d302-license-scanning)                 | 🟡    |
+| Supply Chain Security| D401   | [Documented Build Process](#d401-documented-build-process) | 🟢    |
+|                    | D402     | [CI/CD as Code](#d402-ci-cd-as-code)                       | 🟢    |
+|                    | D403     | [Artifact Signing](#d403-artifact-signing)                 | 🟡    |
+|                    | D404     | [Dependency Pinning](#d404-dependency-pinning)             | 🟡    |
+| Analysis           | D501     | [Static Code Analysis](#d501-static-code-analysis)         | 🟡    |
+|                    | D502     | [Dynamic Code Analysis](#d502-dynamic-code-analysis)       | 🟡    |
+|                    | D503     | [Code Linting](#d503-code-linting)                         | 🟡    |
+| Reporting          | D601     | [Notifications & Alerts](#d601-notifications--alerts)      | 🟢    |
+|                    | D602     | [Attached Reports](#d602-attached-reports)                 | 🟢    |
 
 - 🟢 MUST have (weight 1)
 - 🟡 NICE have (weight 0.5)
 
-### Maturity Code Map
+## Badge Levels
+
+Your score will generate one of the following badges:
+
+| Level   | Score Range | Badge |
+|---------|-------------| ------|
+| WIP     | 0%          | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
+| PASSING | 1–49%       | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
+| BRONZE  | 50–69%      | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
+| SILVER  | 70–89%      | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
+| GOLD    | 90–100%     | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
+
+## Criteria Reference
+
+### Code Map
 
 |**Code**|**Description**|
 |--------|---------------|
@@ -64,18 +78,83 @@ DevOps Maturity Specification provides guidelines for DevOps best practices, aim
   - `X` = Category (e.g., 1: Basics, 2: Quality)
   - `YZ` = Criteria number
 
+## Criteria Details
 
-## Badge Levels
+#### D101 Branch Builds
 
-Your score will generate one of the following badges:
+Supports builds from any specific branch, not just the `main` branch.
 
-| Level   | Score Range | Badge |
-|---------|-------------| ------|
-| WIP     | 0%          | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
-| PASSING | 1–49%       | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
-| BRONZE  | 50–69%      | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
-| SILVER  | 70–89%      | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
-| GOLD    | 90–100%     | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
+#### D102 Pull Request Builds
+
+Supports building pull requests (PRs), not limited to direct pushes to branches.
+
+#### D103 Clean Build Environments
+
+Supports building in clean environments, such as containers or virtual machines (VMs).
+
+#### D201 Unit Testing
+
+Supports unit testing, including unit or component-level tests.
+
+#### D202 Functional Testing
+
+Supports functional testing, such as integration or end-to-end (E2E) tests.
+
+#### D203 Performance Testing
+
+Supports performance testing, including load, stress, or throughput testing.
+
+#### D204 Code Coverage
+
+Supports measuring code coverage, including line, branch, or function coverage.
+
+#### D205 Accessibility Testing
+
+Supports accessibility testing for standards compliance, such as WCAG.
+
+#### D301 Security Scanning
+
+Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).
+
+#### D302 License Scanning
+
+Supports license scanning using tools like SPDX, FOSSology, or license-checkers.
+
+#### D401 Documented Build Process
+
+Provides a documented build process, including build steps, manifests, or reproducibility details.
+
+#### D402 CI/CD as Code
+
+Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.
+
+#### D403 Artifact Signing
+
+Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.
+
+#### D404 Dependency Pinning
+
+Supports dependency pinning or version locking to ensure reproducible builds.
+
+#### D501 Static Code Analysis
+
+Supports static code analysis tools such as SonarQube, Polaris, or similar.
+
+#### D502 Dynamic Code Analysis
+
+Supports dynamic analysis, including runtime behavior analysis or fuzz testing.
+
+#### D503 Code Linting
+
+Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
+
+#### D601 Notifications & Alerts
+
+Supports notification systems such as email or Slack alerts.
+
+#### D602 Attached Reports
+
+Supports attaching detailed reports to builds, such as test results or coverage metrics.
 
 ---
 
@@ -89,22 +168,22 @@ You can used [devops-maturity](https://github.com/devops-maturity/devops-maturit
 
 [OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.
 
-[^1]: Supports builds from any specific branch, not just the `main` branch.
-[^2]: Supports building pull requests (PRs), not limited to direct pushes to branches.
-[^3]: Supports building in clean environments, such as containers or virtual machines (VMs).
-[^4]: Supports unit testing, including unit or component-level tests.
-[^5]: Supports functional testing, such as integration or end-to-end (E2E) tests.
-[^6]: Supports performance testing, including load, stress, or throughput testing.
-[^7]: Supports measuring code coverage, including line, branch, or function coverage.
-[^8]: Supports accessibility testing for standards compliance, such as WCAG.
-[^9]: Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).
-[^10]: Supports license scanning using tools like SPDX, FOSSology, or license-checkers.
-[^11]: Provides a documented build process, including build steps, manifests, or reproducibility details.
-[^12]: Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.
-[^13]: Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.
-[^14]: Supports dependency pinning or version locking to ensure reproducible builds.
-[^15]: Supports static code analysis tools such as SonarQube, Polaris, or similar.
-[^16]: Supports dynamic analysis, including runtime behavior analysis or fuzz testing.
-[^17]: Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
-[^18]: Supports notification systems such as email or Slack alerts.
-[^19]: Supports attaching detailed reports to builds, such as test results or coverage metrics.
+<!-- [^1]: D101: Supports builds from any specific branch, not just the `main` branch.
+[^2]: D102: Supports building pull requests (PRs), not limited to direct pushes to branches.
+[^3]: D103: Supports building in clean environments, such as containers or virtual machines (VMs).
+[^4]: D104: Supports unit testing, including unit or component-level tests.
+[^5]: D105: Supports functional testing, such as integration or end-to-end (E2E) tests.
+[^6]: D106: Supports performance testing, including load, stress, or throughput testing.
+[^7]: D107: Supports measuring code coverage, including line, branch, or function coverage.
+[^8]: D108: Supports accessibility testing for standards compliance, such as WCAG.
+[^9]: D109: Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).
+[^10]: D110: Supports license scanning using tools like SPDX, FOSSology, or license-checkers.
+[^11]: D111: Provides a documented build process, including build steps, manifests, or reproducibility details.
+[^12]: D112: Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.
+[^13]: D113: Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.
+[^14]: D114: Supports dependency pinning or version locking to ensure reproducible builds.
+[^15]: D115: Supports static code analysis tools such as SonarQube, Polaris, or similar.
+[^16]: D116: Supports dynamic analysis, including runtime behavior analysis or fuzz testing.
+[^17]: D117: Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
+[^18]: D118: Supports notification systems such as email or Slack alerts.
+[^19]: D119: Supports attaching detailed reports to builds, such as test results or coverage metrics. -->

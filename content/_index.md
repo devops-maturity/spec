@@ -44,8 +44,8 @@ DevOps Maturity Specification provides guidelines for DevOps best practices, aim
 | Reporting          | D601     | [Notifications & Alerts](#d601-notifications--alerts)      | 🟢    |
 |                    | D602     | [Attached Reports](#d602-attached-reports)                 | 🟡    |
 
-- 🟢 MUST have (weight 1)
-- 🟡 NICE have (weight 0.5)
+- 🟢 Must-Have (Weight: 1)
+- 🟡 Nice-to-Have (Weight: 0.5)
 
 ## Badge Levels
 

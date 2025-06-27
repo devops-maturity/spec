@@ -35,8 +35,7 @@ languages:
       versions:
         current: v1.0.0
         list:
-        - v1.0.0
-        - v1.0.0-next
+        - next
   zh:
     params:
       weight: 2
@@ -53,5 +52,4 @@ languages:
       versions:
         current: v1.0.0
         list:
-        - v1.0.0
-        - v1.0.0-next
+        - next

@@ -1,4 +1,5 @@
 ---
+type: page
 draft: false
 ---
 

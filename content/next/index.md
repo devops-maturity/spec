@@ -1,6 +1,5 @@
 ---
 draft: false
-aliases: ["/en/"]
 ---
 
 # DevOps Maturity Specification 1.0.0-next

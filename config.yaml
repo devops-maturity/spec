@@ -2,7 +2,7 @@ baseURL: '/'
 languageCode: en-us
 theme: devops-maturity
 defaultContentLanguageInSubdir: false
-defaultContentLanguage: "en"
+# defaultContentLanguage: "en"
 
 # Global parameters
 params:

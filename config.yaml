@@ -32,8 +32,11 @@ languages:
         url: '#specification'
       - label: Contribute
         url: 'https://github.com/devops-maturity/spec'
-      # versions:
-      #   current: v1.0.0
+      versions:
+        current: v1.0.0
+        list:
+        - v1.0.0
+        - v1.0.0-next
   zh:
     params:
       weight: 2
@@ -47,3 +50,8 @@ languages:
         url: '#规范'
       - label: 贡献
         url: 'https://github.com/devops-maturity/spec'
+      versions:
+        current: v1.0.0
+        list:
+        - v1.0.0
+        - v1.0.0-next

@@ -16,3 +16,10 @@ Let others know your project follows the DevOps Maturity specification. Add this
 ```markdown
 [![DevOps Maturity](https://img.shields.io/badge/DevOps%20Maturity%20Specification-1.0.0-yellow)](https://devops-maturity.github.io/)
 ```
+
+## 🤝 Contributing
+
+We welcome contributions from the community!  
+If you'd like to help improve the DevOps Maturity Specification — whether it's fixing a typo, improving the questions, or proposing a new maturity dimension — please check out our [contributing guidelines](CONTRIBUTING.md).
+
+No contribution is too small. Thank you for helping us grow! 💛

@@ -42,7 +42,7 @@ DevOps Maturity Specification provides guidelines for DevOps best practices, aim
 |                    | D502     | [Dynamic Code Analysis](#d502-dynamic-code-analysis)       | 🟡    |
 |                    | D503     | [Code Linting](#d503-code-linting)                         | 🟡    |
 | Reporting          | D601     | [Notifications & Alerts](#d601-notifications--alerts)      | 🟢    |
-|                    | D602     | [Attached Reports](#d602-attached-reports)                 | 🟢    |
+|                    | D602     | [Attached Reports](#d602-attached-reports)                 | 🟡    |
 
 - 🟢 MUST have (weight 1)
 - 🟡 NICE have (weight 0.5)
@@ -160,9 +160,9 @@ Supports attaching detailed reports to builds, such as test results or coverage 
 
 ## FAQ
 
-### What tools can be used to caculate your score?
+### What tools can be used to calculate your score?
 
-You can used [devops-maturity](https://github.com/devops-maturity/devops-maturity) which support web UI and CLI to calculate your score automatically.
+You can use [devops-maturity](https://github.com/devops-maturity/devops-maturity), which supports web UI and CLI to calculate your score automatically.
 
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 

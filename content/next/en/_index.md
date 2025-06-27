@@ -1,6 +1,7 @@
 ---
-type: about
 draft: false
+aliases: ["/en/"]
+layout: single
 ---
 
 # DevOps Maturity Specification 1.0.0-next

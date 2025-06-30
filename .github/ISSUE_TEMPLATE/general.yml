@@ -1,6 +1,6 @@
 name: 💡 Proposal / 🐞 Bug Report
 description: Suggest a new Criteria, Feature, or report a Bug
-title: " "
+title: "[Proposal/Bug]: [Brief Summary]"
 labels: ["triage"]
 body:
   - type: dropdown

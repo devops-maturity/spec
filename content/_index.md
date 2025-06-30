@@ -8,9 +8,11 @@ layout: single
 
 ## Summary
 
-DevOps Maturity Specification provides guidelines for DevOps best practices, aiming to enhance collaboration, automation, and efficiency across software development and operations.
+### What is the DevOps Maturity Specification?
 
-## Key Points
+The DevOps Maturity Specification is a set of guidelines and criteria designed to help organizations assess and improve their DevOps practices. It provides a structured approach to evaluate key areas such as Basics, Quality, Security, Supply Chain Security, Analysis, and Reporting. The specification is intended to align with best practices and provide a framework for continuous improvement within the DevOps community.
+
+### Key Points
 
 - **Purpose**: Help organizations and teams assess DevOps practices, align on best practices, and drive continuous improvement.
 - **Scope**: Covers key DevOps domains including build, testing, security, supply chain, analysis, and reporting.
@@ -162,10 +164,21 @@ Supports attaching detailed reports to builds, such as test results or coverage 
 
 ## FAQ
 
-### What tools can be used to calculate your score?
-
-You can use [devops-maturity](https://github.com/devops-maturity/devops-maturity), which supports web UI and CLI to calculate your score automatically.
-
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
 [OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.
+
+### What is the difference between DevOps Maturity Model and DevOps Maturity Specification?
+
+The DevOps Maturity Model is a conceptual framework that outlines the stages of DevOps adoption and maturity, while the DevOps Maturity Specification provides a detailed, actionable set of criteria and guidelines for assessing and improving DevOps practices. The specification is designed to be used with tools like [devops-maturity](https://github.com/devops-maturity/devops-maturity) to calculate maturity scores automatically.
+
+### How can I contribute to the DevOps Maturity Specification?
+
+You can contribute by proposing new criteria, features, or reporting bugs. Please [open an issue](https://github.com/devops-maturity/spec/issues) or [create a pull request](https://github.com/devops-maturity/spec/pulls) on GitHub. We welcome contributions from the community!
+
+### How can I use the DevOps Maturity Specification in my organization?
+
+You can integrate the DevOps Maturity Specification into your organization's DevOps practices by:
+- Using the criteria to assess your current DevOps maturity level.
+- Implementing the recommended criteria to improve your DevOps processes.
+- Utilizing tools like [devops-maturity](https://github.com/devops-maturity/devops-maturity) to calculate maturity scores and generate badges automatically.

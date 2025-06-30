@@ -1,0 +1,56 @@
+name: 💡 Proposal / 🐞 Bug Report
+description: Suggest a new Criteria, Feature, or report a Bug
+title: "[Proposal]: "
+labels: ["triage"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: What type of issue is this?
+      options:
+        - New Criteria Proposal
+        - Feature Request
+        - Bug Report
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Please provide a clear and concise description of the issue or idea.
+      placeholder: |
+        e.g., I'd like to propose a new criteria relateed to category X, or I found a bug in the existing criteria Y.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context or Motivation
+      description: |
+        Why is this criteria/feature important or what problem does the bug cause?
+      placeholder: |
+        This proposal improves the maturity assessment by adding criteria for X, or this bug causes issues with Y.
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Optional — provide any additional information that might help in understanding the issue or proposal.
+      placeholder: |
+        e.g., examples, screenshots, or any other relevant information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Checklist
+      options:
+        - label: I've searched the existing issues to avoid duplicates.
+          required: true
+        - label: I'm willing to help implement or discuss this further if needed.
+          required: false

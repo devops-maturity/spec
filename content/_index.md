@@ -84,6 +84,8 @@ Your score will generate one of the following badges:
 
 ## Criteria Details
 
+{{< details >}} 
+
 #### D101 Branch Builds
 
 Supports builds from any specific branch, not just the `main` branch.
@@ -159,6 +161,8 @@ Supports notification systems such as email or Slack alerts.
 #### D602 Attached Reports
 
 Supports attaching detailed reports to builds, such as test results or coverage metrics.
+
+{{< /details >}}
 
 ---
 

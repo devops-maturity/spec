@@ -49,7 +49,7 @@ DevOps 成熟度规范为 DevOps 最佳实践提供指导，旨在提升软件�
 - 🟢 必选（权重 1）
 - 🟡 可选（权重 0.5）
 
-_提出新的评估项？_ 请[提交 issue](https://github.com/devops-maturity/devops-maturity/issues/new)。
+_提出新的评估项？_ 请[提交 issue](https://github.com/devops-maturity/spec/issues)。
 
 ## 徽章等级
 

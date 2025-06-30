@@ -23,8 +23,8 @@ languages:
     params:
       weight: 1
       languageName: "English"
-      title: DevOps Maturity
-      description: DevOps Maturity Specification — assess, improve, and showcase your DevOps maturity.
+      title: DevOps Maturity Specification
+      description: Assess, improve, and showcase your DevOps maturity — across teams and organizations.
       actions:
       - label: Quick Summary
         url: '#summary'
@@ -38,8 +38,8 @@ languages:
     params:
       weight: 2
       languageName: "中文"
-      title: DevOps 成熟度
-      description: DevOps 成熟度规范 - 评估、改进和展示你的 DevOps 成熟度。
+      title: DevOps 成熟度规范
+      description: 评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。
       actions:
       - label: 概述
         url: '#概述'

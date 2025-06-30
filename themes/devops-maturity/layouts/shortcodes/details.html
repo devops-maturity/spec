@@ -1,4 +1,7 @@
+<!-- https://stackoverflow.com/a/78475534/4432099 -->
 <details>
-    <summary>{{ .Get "title" | default "Click to expand content" | markdownify }}</summary>
+    <summary>{{ .Get "title" | default "Click to expand" | markdownify }}</summary>
     <div>{{ .Inner | markdownify }}</div>
 </details>
+
+

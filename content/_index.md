@@ -24,32 +24,33 @@ The DevOps Maturity Specification is a set of guidelines and criteria designed t
 
 ## Specification
 
-| **Category**       |  **Code**| **Criteria**                                               |**Req.**|
-|--------------------|----------|------------------------------------------------------------|--------|
-| Basics             | D101     | [Branch Builds](#d101-branch-builds)                       | 🟢    |
-|                    | D102     | [Pull Request Builds](#d102-pull-request-builds)           | 🟢    |
-|                    | D103     | [Clean Build Environments](#d103-clean-build-environments) | 🟡    |
-| Quality            | D201     | [Unit Testing](#d201-unit-testing)                         | 🟢    |
-|                    | D202     | [Functional Testing](#d202-functional-testing)             | 🟢    |
-|                    | D203     | [Performance Testing](#d203-performance-testing)           | 🟡    |
-|                    | D204     | [Code Coverage](#d204-code-coverage)                       | 🟡    |
-|                    | D205     | [Accessibility Testing](#d205-accessibility-testing)       | 🟡    |
-| Security           | D301     | [Security Scanning](#d301-security-scanning)               | 🟢    |
-|                    | D302     | [License Scanning](#d302-license-scanning)                 | 🟡    |
-| Supply Chain Security| D401   | [Documented Build Process](#d401-documented-build-process) | 🟢    |
-|                    | D402     | [CI/CD as Code](#d402-ci-cd-as-code)                       | 🟢    |
-|                    | D403     | [Artifact Signing](#d403-artifact-signing)                 | 🟡    |
-|                    | D404     | [Dependency Pinning](#d404-dependency-pinning)             | 🟡    |
-| Analysis           | D501     | [Static Code Analysis](#d501-static-code-analysis)         | 🟡    |
-|                    | D502     | [Dynamic Code Analysis](#d502-dynamic-code-analysis)       | 🟡    |
-|                    | D503     | [Code Linting](#d503-code-linting)                         | 🟡    |
-| Reporting          | D601     | [Notifications & Alerts](#d601-notifications--alerts)      | 🟢    |
-|                    | D602     | [Attached Reports](#d602-attached-reports)                 | 🟡    |
+| **Category**       | **Code**[^1]| **Criteria**[^2]            |**Req.**[^3]|
+|--------------------|----------|--------------------------------|--------|
+| Basics             | D101     | Branch Builds                  | 🟢    |
+|                    | D102     | Pull Request Builds            | 🟢    |
+|                    | D103     | Clean Build Environments       | 🟡    |
+| Quality            | D201     | Unit Testing                   | 🟢    |
+|                    | D202     | Functional Testing             | 🟢    |
+|                    | D203     | Performance Testing            | 🟡    |
+|                    | D204     | Code Coverage                  | 🟡    |
+|                    | D205     | Accessibility Testing          | 🟡    |
+| Security           | D301     | Security Scanning              | 🟢    |
+|                    | D302     | License Scanning               | 🟡    |
+| Supply Chain Security| D401   | Documented Build Process       | 🟢    |
+|                    | D402     | CI/CD as Code                  | 🟢    |
+|                    | D403     | Artifact Signing               | 🟡    |
+|                    | D404     | Dependency Pinning             | 🟡    |
+| Analysis           | D501     | Static Code Analysis           | 🟡    |
+|                    | D502     | Dynamic Code Analysis          | 🟡    |
+|                    | D503     | Code Linting                   | 🟡    |
+| Reporting          | D601     | Notifications & Alerts         | 🟢    |
+|                    | D602     | Attached Reports               | 🟡    |
 
-- 🟢 Must-Have (Weight: 1)
-- 🟡 Nice-to-Have (Weight: 0.5)
+[^1]: A criteria ID code is a unique identifier assigned to specific criteria. For more details, see the [Code Map](#code-map).
+[^2]: Detailed information on each criteria can be found in the [Criteria Details](#criteria-details) section.
+[^3]: Required Levels: 🟢 Must-Have (Weight: 1), 🟡 Nice-to-Have (Weight: 0.5).
 
-_Proposed a new criterion?_ Please [open an issue](https://github.com/devops-maturity/spec/issues).
+_Proposed a new criteria?_ Please [open an issue](https://github.com/devops-maturity/spec/issues).
 
 ## Badge Levels
 
@@ -84,83 +85,29 @@ Your score will generate one of the following badges:
 
 ## Criteria Details
 
-{{< details >}} 
+{{< details title="Click to expand criteria details" >}} 
 
-#### D101 Branch Builds
-
-Supports builds from any specific branch, not just the `main` branch.
-
-#### D102 Pull Request Builds
-
-Supports building pull requests (PRs), not limited to direct pushes to branches.
-
-#### D103 Clean Build Environments
-
-Supports building in clean environments, such as containers or virtual machines (VMs).
-
-#### D201 Unit Testing
-
-Supports unit testing, including unit or component-level tests.
-
-#### D202 Functional Testing
-
-Supports functional testing, such as integration or end-to-end (E2E) tests.
-
-#### D203 Performance Testing
-
-Supports performance testing, including load, stress, or throughput testing.
-
-#### D204 Code Coverage
-
-Supports measuring code coverage, including line, branch, or function coverage.
-
-#### D205 Accessibility Testing
-
-Supports accessibility testing for standards compliance, such as WCAG.
-
-#### D301 Security Scanning
-
-Supports security scanning, including SAST (Static Application Security Testing) and DAST (Dynamic Application Security Testing).
-
-#### D302 License Scanning
-
-Supports license scanning using tools like SPDX, FOSSology, or license-checkers.
-
-#### D401 Documented Build Process
-
-Provides a documented build process, including build steps, manifests, or reproducibility details.
-
-#### D402 CI/CD as Code
-
-Supports CI/CD workflows defined as code, such as pipeline-as-code or infrastructure-as-code.
-
-#### D403 Artifact Signing
-
-Supports artifact signing (e.g., with PGP or GPG) to ensure authenticity and integrity.
-
-#### D404 Dependency Pinning
-
-Supports dependency pinning or version locking to ensure reproducible builds.
-
-#### D501 Static Code Analysis
-
-Supports static code analysis tools such as SonarQube, Polaris, or similar.
-
-#### D502 Dynamic Code Analysis
-
-Supports dynamic analysis, including runtime behavior analysis or fuzz testing.
-
-#### D503 Code Linting
-
-Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.
-
-#### D601 Notifications & Alerts
-
-Supports notification systems such as email or Slack alerts.
-
-#### D602 Attached Reports
-
-Supports attaching detailed reports to builds, such as test results or coverage metrics.
+| **Code** | **Criteria**           | **Description**                            |
+| ------ | ------------------------ | ------------------------------------------ |
+| D101   | Branch Builds            | Supports builds from any specific branch, not just the `main` branch. |
+| D102   | Pull Request Builds      | Supports building pull requests (PRs), not limited to direct pushes to branches. |
+| D103   | Clean Build Environments | Supports building in clean environments, such as containers or VMs. |
+| D201   | Unit Testing             | Supports unit testing, including unit or component-level tests.     |
+| D202   | Functional Testing       | Supports functional testing, such as integration or end-to-end (E2E) tests. |
+| D203   | Performance Testing      | Supports performance testing, including load, stress, or throughput testing.|
+| D204   | Code Coverage            | Supports measuring code coverage, including line, branch, or function coverage.|
+| D205   | Accessibility Testing    | Supports accessibility testing for standards compliance, such as WCAG.|
+| D301   | Security Scanning        | Supports security scanning, including SAST and DAST.                  |
+| D302   | License Scanning         | Supports license scanning using tools like SPDX, FOSSology, or license-checkers.|
+| D401   | Documented Build Process | Provides a documented build process, including build steps or reproducibility.|
+| D402   | CI/CD as Code            | Supports CI/CD workflows defined as code, such as pipeline-as-code.   |
+| D403   | Artifact Signing         | Supports artifact signing to ensure authenticity and integrity.       |
+| D404   | Dependency Pinning       | Supports dependency pinning or version locking for reproducible builds. |
+| D501   | Static Code Analysis     | Supports static analysis tools like SonarQube, Polaris, or similar.   |
+| D502   | Dynamic Code Analysis    | Supports dynamic analysis, including runtime behavior analysis or fuzz testing.|
+| D503   | Code Linting             | Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.|
+| D601   | Notifications & Alerts   | Supports notification systems such as email or Slack alerts.          |
+| D602   | Attached Reports         | Supports attaching detailed reports to builds, like test results or coverage.|
 
 {{< /details >}}
 

@@ -47,6 +47,8 @@ DevOps Maturity Specification provides guidelines for DevOps best practices, aim
 - 🟢 Must-Have (Weight: 1)
 - 🟡 Nice-to-Have (Weight: 0.5)
 
+_Proposed a new criterion?_ Please [open an issue](https://github.com/devops-maturity/devops-maturity/issues/new).
+
 ## Badge Levels
 
 Your score will generate one of the following badges:

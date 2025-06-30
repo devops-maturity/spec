@@ -58,11 +58,11 @@ _提出新的评估项？_ 请[提交 issue](https://github.com/devops-maturity/
 
 | 等级    | 分数范围   | 徽章 |
 |---------|-----------|------|
-| WIP     | 0%        | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
-| PASSING | 1–49%     | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
-| BRONZE  | 50–69%    | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
-| SILVER  | 70–89%    | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
-| GOLD    | 90–100%   | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
+| WIP     | 0 - 29        | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
+| PASSING | 30 - 49   | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
+| BRONZE  | 50 - 69    | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
+| SILVER  | 70 - 89    | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |
+| GOLD    | 90 - 100   | ![GOLD](https://img.shields.io/badge/DevOps%20Maturity-GOLD-gold.svg) |
 
 ## 评估项代码说明
 

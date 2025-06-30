@@ -121,7 +121,7 @@ Your score will generate one of the following badges:
 
 ### What is the difference between DevOps Maturity Model and DevOps Maturity Specification?
 
-The DevOps Maturity Model is a conceptual framework that outlines the stages of DevOps adoption and maturity, while the DevOps Maturity Specification provides a detailed, actionable set of criteria and guidelines for assessing and improving DevOps practices. The specification is designed to be used with tools like [devops-maturity](https://github.com/devops-maturity/devops-maturity) to calculate maturity scores automatically.
+The DevOps Maturity Model is a conceptual framework that outlines the stages of DevOps adoption and maturity, while the DevOps Maturity Specification provides a detailed, actionable set of criteria and guidelines for assessing and improving DevOps practices.
 
 ### How can I contribute to the DevOps Maturity Specification?
 

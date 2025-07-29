@@ -103,7 +103,7 @@ Your score will generate one of the following badges:
 | D302   | License Scanning         | Supports license scanning using tools like SPDX, FOSSology, or license-checkers.|
 | D401   | Documented Build Process | CI/CD build steps are version-controlled and documented.|
 | D402   | CI/CD as Code            | Pipelines and infrastructure are defined as code (IaC, PaC).  |
-| D403   | Artifact Signing         | Build artifacts are cryptographically signed.	|
+| D403   | Artifact Signing         | Build artifacts are cryptographically signed. |
 | D404   | Dependency Pinning       | All dependencies are pinned to exact versions. |
 | D405   | SBOM Generation          | Automatically generate and manage Software Bill of Materials (SBOMs) using SPDX or CycloneDX. |
 | D501   | Static Code Analysis     | Analyze code for vulnerabilities and bugs without executing it.   |

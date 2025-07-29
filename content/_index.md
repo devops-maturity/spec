@@ -40,11 +40,13 @@ The DevOps Maturity Specification is a set of guidelines and criteria designed t
 |                    | D402     | CI/CD as Code                  | 🟢    |
 |                    | D403     | Artifact Signing               | 🟡    |
 |                    | D404     | Dependency Pinning             | 🟡    |
+|                    | D405     | SBOM Generation                | 🟡    |
 | Analysis           | D501     | Static Code Analysis           | 🟡    |
 |                    | D502     | Dynamic Code Analysis          | 🟡    |
 |                    | D503     | Code Linting                   | 🟡    |
 | Reporting          | D601     | Notifications & Alerts         | 🟢    |
 |                    | D602     | Attached Reports               | 🟡    |
+|                    | D603     | Compliance Mapping & Auditability | 🟡    |
 
 [^1]: A criteria ID code is a unique identifier assigned to specific criteria. For more details, see the [Code Map](#code-map).
 [^2]: Detailed information on each criteria can be found in the [Criteria Details](#criteria-details) section.
@@ -99,15 +101,17 @@ Your score will generate one of the following badges:
 | D205   | Accessibility Testing    | Supports accessibility testing for standards compliance, such as WCAG.|
 | D301   | Security Scanning        | Supports security scanning, including SAST and DAST.                  |
 | D302   | License Scanning         | Supports license scanning using tools like SPDX, FOSSology, or license-checkers.|
-| D401   | Documented Build Process | Provides a documented build process, including build steps or reproducibility.|
-| D402   | CI/CD as Code            | Supports CI/CD workflows defined as code, such as pipeline-as-code.   |
-| D403   | Artifact Signing         | Supports artifact signing to ensure authenticity and integrity.       |
-| D404   | Dependency Pinning       | Supports dependency pinning or version locking for reproducible builds. |
-| D501   | Static Code Analysis     | Supports static analysis tools like SonarQube, Polaris, or similar.   |
-| D502   | Dynamic Code Analysis    | Supports dynamic analysis, including runtime behavior analysis or fuzz testing.|
-| D503   | Code Linting             | Supports code linting using tools like ESLint, Prettier, or pre-commit hooks.|
-| D601   | Notifications & Alerts   | Supports notification systems such as email or Slack alerts.          |
-| D602   | Attached Reports         | Supports attaching detailed reports to builds, like test results or coverage.|
+| D401   | Documented Build Process | CI/CD build steps are version-controlled and documented.|
+| D402   | CI/CD as Code            | Pipelines and infrastructure are defined as code (IaC, PaC).  |
+| D403   | Artifact Signing         | Build artifacts are cryptographically signed. |
+| D404   | Dependency Pinning       | All dependencies are pinned to exact versions. |
+| D405   | SBOM Generation          | Automatically generate and manage Software Bill of Materials (SBOMs) using SPDX or CycloneDX. |
+| D501   | Static Code Analysis     | Analyze code for vulnerabilities and bugs without executing it.   |
+| D502   | Dynamic Code Analysis    | Execute code in test environments to find runtime issues.|
+| D503   | Code Linting             | Enforce code style and formatting rules.|
+| D601   | Notifications & Alerts   | Notify stakeholders on key CI/CD events. |
+| D602   | Attached Reports         | CI/CD runs produce and attach structured test and analysis reports.|
+| D603   | Compliance Mapping & Auditability | Map controls to standards (e.g., SLSA, NIST, ISO 20243) and provide audit-ready reports.  |
 
 {{< /details >}}
 

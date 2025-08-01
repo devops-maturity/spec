@@ -99,7 +99,7 @@ Your score will generate one of the following badges:
 | D203   | Performance Testing      | Supports performance-related testing, such as load, stress, and scalability tests, to evaluate system responsiveness and stability under pressure. |
 | D204   | Code Coverage            | Enables measurement of test coverage, including metrics like line, branch, and function coverage, to assess test effectiveness. |
 | D205   | Accessibility Testing    | Supports testing for compliance with accessibility standards (e.g., WCAG) to ensure usability for people with disabilities.|
-| D301   | Vulnerability Scanning	  | Scanning source code, containers, or infrastructure for known security vulnerabilities using tools like Snyk, Trivy, or SonarQube security rules. |
+| D301   | Vulnerability Scanning    | Scanning source code, containers, or infrastructure for known security vulnerabilities using tools like Snyk, Trivy, or SonarQube security rules. |
 | D302   | License Scanning         | Checking open-source dependencies for license compliance and legal risks to avoid unapproved or incompatible usage. |
 | D401   | Documented Build Process | CI/CD build steps are version-controlled and documented.|
 | D402   | CI/CD as Code            | Pipelines and infrastructure are defined as code (IaC, PaC).  |

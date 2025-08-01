@@ -60,7 +60,7 @@ Your score will generate one of the following badges:
 
 | Level   | Score Range | Badge |
 |---------|-------------| ------|
-| WIP     | 0 - 29      | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-red.svg)   |
+| WIP     | 0 - 29      | ![WIP](https://img.shields.io/badge/DevOps%20Maturity-WIP-blue.svg)   |
 | PASSING | 30 - 49     | ![PASSING](https://img.shields.io/badge/DevOps%20Maturity-PASSING-green.svg) |
 | BRONZE  | 50 - 69     | ![BRONZE](https://img.shields.io/badge/DevOps%20Maturity-BRONZE-yellow.svg) |
 | SILVER  | 70 - 89     | ![SILVER](https://img.shields.io/badge/DevOps%20Maturity-SILVER-silver.svg) |

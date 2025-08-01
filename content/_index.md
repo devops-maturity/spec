@@ -34,7 +34,7 @@ The DevOps Maturity Specification is a set of guidelines and criteria designed t
 |                    | D203     | Performance Testing            | 🟡    |
 |                    | D204     | Code Coverage                  | 🟡    |
 |                    | D205     | Accessibility Testing          | 🟡    |
-| Security           | D301     | Security Scanning              | 🟢    |
+| Security           | D301     | Vulnerability Scanning         | 🟢    |
 |                    | D302     | License Scanning               | 🟡    |
 | Supply Chain Security| D401   | Documented Build Process       | 🟢    |
 |                    | D402     | CI/CD as Code                  | 🟢    |
@@ -91,27 +91,27 @@ Your score will generate one of the following badges:
 
 | **Code** | **Criteria**           | **Description**                            |
 | ------ | ------------------------ | ------------------------------------------ |
-| D101   | Branch Builds            | Supports builds from any specific branch, not just the `main` branch. |
-| D102   | Pull Request Builds      | Supports building pull requests (PRs), not limited to direct pushes to branches. |
-| D103   | Clean Build Environments | Supports building in clean environments, such as containers or VMs. |
-| D201   | Unit Testing             | Supports unit testing, including unit or component-level tests.     |
-| D202   | Functional Testing       | Supports functional testing, such as integration or end-to-end (E2E) tests. |
-| D203   | Performance Testing      | Supports performance testing, including load, stress, or throughput testing.|
-| D204   | Code Coverage            | Supports measuring code coverage, including line, branch, or function coverage.|
-| D205   | Accessibility Testing    | Supports accessibility testing for standards compliance, such as WCAG.|
-| D301   | Security Scanning        | Supports security scanning, including SAST and DAST.                  |
-| D302   | License Scanning         | Supports license scanning using tools like SPDX, FOSSology, or license-checkers.|
+| D101   | Branch Builds            | Enables builds to be triggered from any Git branch, not limited to the main or default branch. |
+| D102   | Pull Request Builds      | Supports automatic builds for pull requests (PRs), allowing validation before merging into target branches. |
+| D103   | Clean Build Environments | Ensures builds run in isolated, reproducible environments (e.g., containers or virtual machines) to avoid contamination from previous runs. |
+| D201   | Unit Testing             | Supports execution of unit or component-level tests to validate individual functions or modules in isolation. |
+| D202   | Functional Testing       | Enables running functional, integration, or end-to-end (E2E) tests to validate system behavior and interactions. |
+| D203   | Performance Testing      | Supports performance-related testing, such as load, stress, and scalability tests, to evaluate system responsiveness and stability under pressure. |
+| D204   | Code Coverage            | Enables measurement of test coverage, including metrics like line, branch, and function coverage, to assess test effectiveness. |
+| D205   | Accessibility Testing    | Supports testing for compliance with accessibility standards (e.g., WCAG) to ensure usability for people with disabilities.|
+| D301   | Vulnerability Scanning	  | Scanning source code, containers, or infrastructure for known security vulnerabilities using tools like Snyk, Trivy, or SonarQube security rules. |
+| D302   | License Scanning         | Checking open-source dependencies for license compliance and legal risks to avoid unapproved or incompatible usage. |
 | D401   | Documented Build Process | CI/CD build steps are version-controlled and documented.|
 | D402   | CI/CD as Code            | Pipelines and infrastructure are defined as code (IaC, PaC).  |
 | D403   | Artifact Signing         | Build artifacts are cryptographically signed. |
 | D404   | Dependency Pinning       | All dependencies are pinned to exact versions. |
 | D405   | SBOM Generation          | Automatically generate and manage Software Bill of Materials (SBOMs) using SPDX or CycloneDX. |
-| D501   | Static Code Analysis     | Analyze code for vulnerabilities and bugs without executing it.   |
-| D502   | Dynamic Code Analysis    | Execute code in test environments to find runtime issues.|
-| D503   | Code Linting             | Enforce code style and formatting rules.|
+| D501   | Static Code Analysis     | Analyzing code without executing it to detect bugs, code smells, or potential security issues. |
+| D502   | Dynamic Code Analysis    | Analyzing running applications to detect runtime vulnerabilities, memory leaks, or behavioral issues. |
+| D503   | Code Linting             | Checking code for style, formatting, and consistency rules. |
 | D601   | Notifications & Alerts   | Notify stakeholders on key CI/CD events. |
 | D602   | Attached Reports         | CI/CD runs produce and attach structured test and analysis reports.|
-| D603   | Compliance Mapping & Auditability | Map controls to standards (e.g., SLSA, NIST, ISO 20243) and provide audit-ready reports.  |
+| D603   | Compliance Mapping & Auditability | Map controls to standards (e.g., SLSA, NIST, ISO 20243) and provide audit-ready reports. |
 
 {{< /details >}}
 

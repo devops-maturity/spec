@@ -4,7 +4,7 @@ aliases: ["/zh/"]
 layout: single
 ---
 
-# DevOps 成熟度规范 1.0.0
+# DevOps 成熟度规范
 
 ## 概述
 

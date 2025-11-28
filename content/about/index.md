@@ -16,7 +16,7 @@ The DevOps Maturity specification is standardized to assess the maturity of DevO
 * [commit-check](https://github.com/commit-check): A free, powerful tool that enforces commit metadata, branch naming, and more.
 * _[... and more projects using DevOps Maturity](https://github.com/search?q=devops-maturity.github.io&type=code&p=1)._
 
-[![DevOps Maturity](https://img.shields.io/badge/DevOps%20Maturity%20Specification-1.0.0-yellow)](https://github.com/devops-maturity/devops-maturity)
+[![DevOps Maturity](https://img.shields.io/badge/DevOps%20Maturity-Specification-yellow)](https://devops-maturity.github.io/)
 
 _Want your project on this list?_ [send a pull request](https://github.com/devops-maturity/spec/pulls).
 

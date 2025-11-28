@@ -4,7 +4,7 @@ aliases: ["/en/"]
 layout: single
 ---
 
-# DevOps Maturity Specification 1.0.0
+# DevOps Maturity Specification
 
 ## Summary
 

@@ -23,7 +23,7 @@ params:
     current: 1.0.0
 
   welcome:
-    description: A specification made for write standardized and useful commit messages
+    description: A specification for DevOps maturity
     image: 'https://path-to-image'
     actions:
     - label: Read the specs

@@ -5,7 +5,7 @@ updates:
 - package-ecosystem: npm
   directory: /themes/devops-maturity/
   schedule:
-    interval: monthly
+    interval: quarterly
   groups:
     npm-deps:
       patterns:
@@ -13,7 +13,7 @@ updates:
 - package-ecosystem: github-actions
   directory: /
   schedule:
-    interval: monthly
+    interval: quarterly
   groups:
     github-action-deps:
       patterns:

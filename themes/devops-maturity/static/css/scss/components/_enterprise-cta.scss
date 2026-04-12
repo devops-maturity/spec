@@ -1,3 +1,5 @@
+@use "./../abstracts/index";
+
 .enterprise-cta {
   margin: 48px 0;
   display: flex;
@@ -8,12 +10,12 @@
   &__button {
     display: inline-block;
     padding: 14px 28px;
-    background: linear-gradient(45deg, #5b7965 0%, #f4c403 100%);
+    background: linear-gradient(45deg, index.$color-primary 0%, index.$color-primary-light 100%);
     color: #fff;
     font-weight: bold;
     font-size: 1rem;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: index.$radius-lg;
     transition: opacity 0.3s ease, transform 0.2s ease;
     border: none;
     cursor: pointer;
@@ -30,7 +32,7 @@
     color: #666;
 
     a {
-      color: #5b7965;
+      color: index.$color-primary;
       font-weight: bold;
       text-decoration: none;
 

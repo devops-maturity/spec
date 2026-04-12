@@ -36,6 +36,14 @@
     padding: index.$dropdown-label-padding;
     background-color: index.$dropdown-label-background-color;
     border-radius: index.$dropdown-border-radius;
+    cursor: pointer;
+    transition: background-color .2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(index.$color-neutral-light, .14);
+    }
+
     &:after {
       display: none;
       content: '';
@@ -60,6 +68,7 @@
     list-style: none;
     font-size: 13px;
     background-color: index.$dropdown-options-background-color;
+    border: 1px solid rgba(index.$color-neutral-dark, .06);
     border-radius: index.$dropdown-border-radius;
     box-shadow: index.$shadow-soft;
     overflow: auto;

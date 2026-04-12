@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    <a href="/">
+    <a href="/" aria-label="DevOps Maturity home">
       <div class="logo"></div>
     </a>
     <ul class="header__menu">
@@ -13,22 +13,18 @@
         </ul> -->
       <!-- </li> -->
       <li class="header__menu-item dropdown">
-        <button class="dropdown__label">Languages</button>
+        <button class="dropdown__label" type="button">Languages</button>
         <ul class="dropdown__options">
           {{ range .Site.Home.AllTranslations }}
           <li class="dropdown__option"><a href="{{ .Permalink }}">{{ .Language.Params.LanguageName }}</a></li>
           {{ end }}
         </ul>
       </li>
-      <li class="header__menu-item dropdown">
-        <button class="dropdown__label">
-          <a href="/enterprise" class="no-style-a">Enterprise</a>
-        </button>
+      <li class="header__menu-item">
+        <a href="/enterprise" class="dropdown__label no-style-a">Enterprise</a>
       </li>
-      <li class="header__menu-item dropdown">
-        <button class="dropdown__label">
-          <a href="/about" class="no-style-a">About</a>
-        </button>
+      <li class="header__menu-item">
+        <a href="/about" class="dropdown__label no-style-a">About</a>
       </li>
     </ul>
   </div>

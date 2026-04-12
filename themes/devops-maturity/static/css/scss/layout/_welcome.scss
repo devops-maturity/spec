@@ -39,7 +39,7 @@
     margin-bottom: index.$gap-sm;
 
     @include index.up-to-mobile {
-      word-break: break-all;
+      overflow-wrap: anywhere;
     }
 
     @include index.desktop {
@@ -58,13 +58,13 @@
 
   &__actions {
     display: flex;
-    margin-top: math.div(index.$gap-lg * 3, 2);
+    margin-top: index.$gap-lg;
     flex-wrap: wrap;
   }
 
   &__action {
     padding: 12px 16px;
-    border-radius: 50px;
+    border-radius: index.$radius-lg;
     text-decoration: none;
     line-height: 1.5;
     color: index.$welcome-action-color;
@@ -111,4 +111,3 @@
     }
   }
 }
-

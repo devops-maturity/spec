@@ -1,0 +1,116 @@
+name: 🏢 Enterprise Inquiry
+description: Request DevOps Maturity Enterprise (self-hosted) for your organization
+title: "[Enterprise]: <Your organization>"
+labels: ["enterprise"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in **DevOps Maturity Enterprise**!
+
+        Enterprise is delivered as a **self-hosted** application (Docker Compose) with a signed license. Every new deployment includes a built-in **14-day trial**. Fill in the details below so we can recommend the right tier and follow up.
+
+        > ⚠️ This issue is **public**. Do not post secrets or sensitive internal details — we'll move to a private channel for anything confidential.
+
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      description: Company or organization name.
+      placeholder: e.g., Acme Corp
+    validations:
+      required: true
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Organization size
+      description: Approximate number of people in your engineering organization.
+      options:
+        - Fewer than 50
+        - 50–200
+        - 200–1000
+        - More than 1000
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Preferred deployment environment
+      description: Where do you plan to run the self-hosted deployment?
+      options:
+        - On-premise / self-managed servers
+        - Private cloud (AWS / GCP / Azure / other)
+        - Air-gapped / offline network
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: capabilities
+    attributes:
+      label: Which capabilities matter most to you?
+      description: Select all that apply. Items marked (roadmap) are planned but not yet generally available — telling us helps us prioritize.
+      options:
+        - label: Custom criteria / extensions
+        - label: Private / on-premise deployment
+        - label: Role-Based Access Control (RBAC)
+        - label: Team & organization management
+        - label: Audit logs
+        - label: Advanced analytics & reporting
+        - label: REST API access
+        - label: Single Sign-On (SSO / LDAP / SAML) (roadmap)
+        - label: Custom branding (roadmap)
+        - label: Compliance reporting — SOC 2 / ISO 27001 (roadmap)
+        - label: Dedicated support & SLA
+
+  - type: input
+    id: scale
+    attributes:
+      label: Expected scale
+      description: Roughly how many users and teams do you expect to onboard?
+      placeholder: e.g., ~300 users across 20 teams
+    validations:
+      required: false
+
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Timeline
+      description: When are you looking to deploy?
+      options:
+        - Evaluating now
+        - Within 1 month
+        - 1–3 months
+        - 3+ months / just exploring
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: How should we reach you? An email or other channel — remember this issue is public.
+      placeholder: e.g., name@acme.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Compliance requirements, integrations, identity provider, or other context that would help us prepare.
+      placeholder: e.g., We use Okta for SSO and need data to stay in the EU.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Checklist
+      options:
+        - label: I understand Enterprise is delivered as a self-hosted deployment with a signed license.
+          required: true
+        - label: I have not included any secrets or confidential information in this public issue.
+          required: true

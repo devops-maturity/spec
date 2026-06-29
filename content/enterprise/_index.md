@@ -21,33 +21,31 @@ Take your DevOps maturity assessment to the next level with the Enterprise Editi
 | Community Support | ✅ | ✅ |
 | Custom Criteria / Extensions | ❌ | ✅ |
 | Private / On-Premise Deployment | ❌ | ✅ |
-| Single Sign-On (SSO / LDAP / SAML) | ❌ | ✅ |
 | Role-Based Access Control (RBAC) | ❌ | ✅ |
 | Team & Organization Management | ❌ | ✅ |
 | Audit Logs | ❌ | ✅ |
 | Advanced Analytics & Reporting | ❌ | ✅ |
 | REST API Access | ❌ | ✅ |
-| Custom Branding | ❌ | ✅ |
-| Compliance Reporting (SOC 2, ISO 27001) | ❌ | ✅ |
 | Dedicated Support & SLA | ❌ | ✅ |
+| Single Sign-On (SSO / LDAP / SAML) | ❌ | 🔜 |
+| Custom Branding | ❌ | 🔜 |
+| Compliance Reporting (SOC 2, ISO 27001) | ❌ | 🔜 |
 
-## Enterprise-Only Features
+*✅ Available today &nbsp;•&nbsp; 🔜 On the roadmap*
+
+## Enterprise Features
 
 ### 🔒 Private / On-Premise Deployment
 
 Run DevOps Maturity entirely within your own infrastructure. Keep sensitive assessment data on your own servers, comply with data residency requirements, and integrate with your internal network.
 
-### 🔑 Single Sign-On (SSO)
-
-Integrate with your organization's identity provider via SAML 2.0, LDAP, or OIDC. Streamline access management and enforce centralized authentication policies.
-
 ### 👥 Team & Organization Management
 
-Organize assessments by team, project, or business unit. Assign roles and permissions with fine-grained Role-Based Access Control (RBAC) to ensure the right people have the right access.
+Organize assessments by team, project, or business unit. Assign roles and permissions with fine-grained Role-Based Access Control (RBAC) to ensure the right people have the appropriate access.
 
 ### 📊 Advanced Analytics & Reporting
 
-Gain deeper insights with cross-team trend analysis, historical score tracking, and exportable compliance reports. Map your DevOps controls to frameworks like SLSA, NIST, and ISO 20243.
+Gain deeper insights with cross-team trend analysis, historical score tracking, team benchmark comparisons, and category-level breakdowns that highlight your weakest practice areas. Export your assessment data as JSON or CSV to feed your own BI and reporting tools.
 
 ### 🔌 REST API Access
 
@@ -55,17 +53,42 @@ Integrate DevOps Maturity assessments into your existing DevOps toolchain via a 
 
 ### 🛡️ Audit Logs
 
-Maintain a complete, tamper-resistant record of all assessment activities, configuration changes, and user actions for compliance and security auditing purposes.
-
-### 🎨 Custom Branding
-
-White-label the interface with your organization's logo, colors, and domain to deliver a seamless internal user experience.
+Maintain a complete record of assessment activities, configuration changes, and user actions for compliance and security auditing purposes.
 
 ### 🤝 Dedicated Support & SLA
 
 Get priority support from the DevOps Maturity team, guaranteed response times, and access to a dedicated customer success manager.
 
----
+## On the Roadmap
+
+The following capabilities are planned for upcoming Enterprise releases and are not yet generally available. [Contact us](#get-started-with-enterprise) if any of these are important to your evaluation, and we'll share the latest timeline.
+
+### 🔑 Single Sign-On (SSO)
+
+Integration with your organization's identity provider via SAML 2.0, LDAP, or OIDC, to streamline access management and enforce centralized authentication policies.
+
+### 🎨 Custom Branding
+
+White-label the interface with your organization's logo, colors, and domain to deliver a seamless internal user experience.
+
+### 📋 Compliance Reporting
+
+Exportable reports mapped to common compliance frameworks such as SOC 2 and ISO 27001, built on top of the Enterprise audit trail.
+
+## How Enterprise Is Delivered
+
+DevOps Maturity Enterprise is delivered as a **self-hosted** application that you run on your own infrastructure with Docker Compose.
+
+- **Self-service trial** — every new deployment starts with a built-in 14-day trial, so you can evaluate without a license key.
+- **License tiers** — pick the tier that fits your organization:
+
+| Tier | Users | Teams | Assessments / month |
+|------|:-----:|:-----:|:-------------------:|
+| Trial | 10 | 3 | 50 |
+| Starter | 100 | 20 | 500 |
+| Enterprise | 10,000 | 500 | 100,000 |
+
+- **Commercial packaging** — a one-time onboarding/deployment fee, an annual support & upgrade subscription, and optional premium support / SLA.
 
 ## Get Started with Enterprise
 

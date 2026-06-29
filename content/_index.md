@@ -24,6 +24,34 @@ The DevOps Maturity Specification is a set of guidelines and criteria designed t
 
 ---
 
+## How DevOps Maturity Compares
+
+DevOps Maturity is a **breadth-first, automatable baseline** for the whole delivery lifecycle. Most adjacent frameworks go deeper but narrower, or measure *outcomes* rather than *practices in place*. They are complements, not competitors.
+
+| Framework | Primary focus | Scope | How you run it | Best for |
+|---|---|---|---|---|
+| **DevOps Maturity** | DevOps **practices & controls** in place | Build, quality, security, supply chain, analysis, reporting | CLI · Web UI · GitHub Action · YAML · AI auto-assess | A fast, broad baseline + shareable badge for OSS **and** internal repos |
+| [DORA metrics](https://dora.dev/) | Delivery **outcomes** | Deploy frequency, lead time, MTTR, change-fail rate | Telemetry from your pipeline | Measuring delivery performance once practices exist |
+| [OpenSSF Scorecard](https://securityscorecards.dev/) | OSS security **health** | Repo-level security heuristics | Automated checks | Hardening the security posture of a public repo |
+| [OpenSSF Best Practices](https://www.bestpractices.dev/) | OSS best-practice **badge** | Whole SDLC, security-leaning | Web SaaS self-attestation | Earning a recognized OSS badge (SaaS only) |
+| [SLSA](https://slsa.dev/) | Supply-chain **integrity** | Build/source provenance & attestation | Attestation + verification | Deep, verifiable supply-chain assurance |
+| Traditional maturity models (CMMI-style) | Org **process** maturity | Broad, process-heavy | Consultant-led assessment | Large-scale, audited process programs |
+
+### What makes it different
+
+- **Breadth, not just security** — covers testing, quality, analysis, and reporting, not only supply-chain/security.
+- **Automatable end-to-end** — machine-readable YAML in, JSON/badge out; drop the [GitHub Action](https://github.com/devops-maturity/devops-maturity-action) into CI and the badge stays current on every change.
+- **AI-powered auto-assessment** — point it at a repo and an LLM infers the answers from README, CI config, and the file tree — no questionnaire required.
+- **Yours to run** — CLI or self-hostable web UI; works on private/internal repos, not just public OSS, with no SaaS lock-in.
+
+### When to use which
+
+- Start with **DevOps Maturity** for a quick, broad health check and a badge.
+- Add **DORA** to track delivery *outcomes* over time.
+- Layer **OpenSSF Scorecard / SLSA** for deeper security and supply-chain rigor once the D3xx/D4xx gaps are closed.
+
+---
+
 ## Specification
 
 | **Category**       | **Code**[^1]| **Criteria**[^2]            |**Req.**[^3]|
@@ -124,6 +152,14 @@ Your score will generate one of the following badges:
 ### What is the difference between OpenSSF Best Practices and DevOps Maturity?
 
 [OpenSSF Best Practices](https://www.bestpractices.dev/) targets open source projects across the entire software development lifecycle, while DevOps Maturity focuses specifically on DevOps practices applicable to both open source and internal enterprise projects. DevOps Maturity provides both a web UI and a CLI for automatic maturity scoring. In contrast, OpenSSF Best Practices only offers a web-based SaaS and does not support internal deployment.
+
+### How does DevOps Maturity relate to DORA metrics?
+
+They answer different questions. [DORA metrics](https://dora.dev/) measure delivery *outcomes* — how fast and how reliably you ship (deployment frequency, lead time, change-failure rate, time to restore). DevOps Maturity measures whether the *practices and controls* that produce those outcomes are actually in place. Use DevOps Maturity to find and close practice gaps, and DORA to track the performance results over time. They work well side by side.
+
+### How does DevOps Maturity relate to OpenSSF Scorecard?
+
+[OpenSSF Scorecard](https://securityscorecards.dev/) runs automated security-health checks on a repository and is focused on open-source security. DevOps Maturity is broader — it also covers testing, quality, analysis, and reporting — and works for internal/private projects, not only public OSS. Scorecard is a great way to deepen the security (D3xx) and supply-chain (D4xx) dimensions once a baseline is established.
 
 ### How does DevOps Maturity relate to SLSA?
 

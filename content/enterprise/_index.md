@@ -28,7 +28,7 @@ Take your DevOps maturity assessment to the next level with the Enterprise Editi
 | REST API Access | ❌ | ✅ |
 | Dedicated Support & SLA | ❌ | ✅ |
 | Single Sign-On (OIDC) | ❌ | ✅ |
-| Custom Branding | ❌ | 🔜 |
+| Custom Branding | ❌ | ✅ |
 | Compliance Reporting (SOC 2, ISO 27001) | ❌ | 🔜 |
 
 *✅ Available today &nbsp;•&nbsp; 🔜 On the roadmap*
@@ -59,6 +59,10 @@ Let users sign in through your corporate identity provider using OpenID Connect 
 
 Maintain a complete record of assessment activities, configuration changes, and user actions for compliance and security auditing purposes.
 
+### 🎨 Custom Branding
+
+White-label the self-hosted interface with your organization's product name, logo, and primary color for a seamless internal user experience. Branding can be set from environment variables or updated at runtime by an administrator.
+
 ### 🤝 Dedicated Support & SLA
 
 Get priority support from the DevOps Maturity team, guaranteed response times, and access to a dedicated customer success manager.
@@ -66,10 +70,6 @@ Get priority support from the DevOps Maturity team, guaranteed response times, a
 ## On the Roadmap
 
 The following capabilities are planned for upcoming Enterprise releases and are not yet generally available. [Contact us](#get-started-with-enterprise) if any of these are important to your evaluation, and we'll share the latest timeline.
-
-### 🎨 Custom Branding
-
-White-label the interface with your organization's logo, colors, and domain to deliver a seamless internal user experience.
 
 ### 📋 Compliance Reporting
 

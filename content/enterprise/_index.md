@@ -27,7 +27,7 @@ Take your DevOps maturity assessment to the next level with the Enterprise Editi
 | Advanced Analytics & Reporting | ❌ | ✅ |
 | REST API Access | ❌ | ✅ |
 | Dedicated Support & SLA | ❌ | ✅ |
-| Single Sign-On (SSO / LDAP / SAML) | ❌ | 🔜 |
+| Single Sign-On (OIDC) | ❌ | ✅ |
 | Custom Branding | ❌ | 🔜 |
 | Compliance Reporting (SOC 2, ISO 27001) | ❌ | 🔜 |
 
@@ -51,6 +51,10 @@ Gain deeper insights with cross-team trend analysis, historical score tracking, 
 
 Integrate DevOps Maturity assessments into your existing DevOps toolchain via a fully documented REST API. Automate score collection and reporting within your CI/CD pipelines.
 
+### 🔑 Single Sign-On (SSO)
+
+Let users sign in through your corporate identity provider using OpenID Connect (OIDC) — Okta, Entra ID, Google Workspace, Keycloak, and more. New users are provisioned just-in-time into the right organization, and `SUPER_ADMIN` is never granted automatically. SAML 2.0 and LDAP are on the roadmap.
+
 ### 🛡️ Audit Logs
 
 Maintain a complete record of assessment activities, configuration changes, and user actions for compliance and security auditing purposes.
@@ -62,10 +66,6 @@ Get priority support from the DevOps Maturity team, guaranteed response times, a
 ## On the Roadmap
 
 The following capabilities are planned for upcoming Enterprise releases and are not yet generally available. [Contact us](#get-started-with-enterprise) if any of these are important to your evaluation, and we'll share the latest timeline.
-
-### 🔑 Single Sign-On (SSO)
-
-Integration with your organization's identity provider via SAML 2.0, LDAP, or OIDC, to streamline access management and enforce centralized authentication policies.
 
 ### 🎨 Custom Branding
 

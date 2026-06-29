@@ -41,7 +41,7 @@ Run DevOps Maturity entirely within your own infrastructure. Keep sensitive asse
 
 ### 👥 Team & Organization Management
 
-Organize assessments by team, project, or business unit. Assign roles and permissions with fine-grained Role-Based Access Control (RBAC) to ensure the right people have the right access.
+Organize assessments by team, project, or business unit. Assign roles and permissions with fine-grained Role-Based Access Control (RBAC) to ensure the right people have the appropriate access.
 
 ### 📊 Advanced Analytics & Reporting
 

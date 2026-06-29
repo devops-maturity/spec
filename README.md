@@ -7,6 +7,22 @@ The DevOps Maturity specification is standardized to assess the maturity of DevO
 
 > DevOps Maturity is a **broad DevOps baseline assessment**. It does not replace specialized supply-chain security standards like [SLSA](https://slsa.dev/). See the [SLSA mapping](MAPPING-SLSA.md) for where the two frameworks overlap.
 
+## How it compares
+
+DevOps Maturity is a **breadth-first, automatable baseline** across the whole delivery lifecycle. Adjacent frameworks go deeper but narrower, or measure outcomes rather than practices — they complement it rather than compete with it.
+
+| Framework | Primary focus | Best for |
+|---|---|---|
+| **DevOps Maturity** | DevOps **practices & controls** in place (build, quality, security, supply chain, analysis, reporting) | A fast, broad baseline + shareable badge for OSS **and** internal repos |
+| [DORA metrics](https://dora.dev/) | Delivery **outcomes** (deploy frequency, lead time, MTTR, change-fail rate) | Tracking delivery performance once practices exist |
+| [OpenSSF Scorecard](https://securityscorecards.dev/) | OSS security **health** (repo-level heuristics) | Hardening the security posture of a public repo |
+| [OpenSSF Best Practices](https://www.bestpractices.dev/) | OSS best-practice **badge** (web SaaS, self-attested) | Earning a recognized OSS badge |
+| [SLSA](https://slsa.dev/) | Supply-chain **integrity** (provenance & attestation) | Deep, verifiable supply-chain assurance |
+
+**What makes it different:** breadth beyond security; automatable end-to-end (YAML in, JSON/badge out, [GitHub Action](https://github.com/devops-maturity/devops-maturity-action) in CI); AI-powered auto-assessment from repo metadata; and CLI / self-hostable web UI that works on private repos with no SaaS lock-in.
+
+See the full comparison and "when to use which" on the [specification site](https://devops-maturity.github.io/).
+
 ## Schema
 
 The assessment file format is defined by a [JSON Schema](schema/devops-maturity.schema.json). Criteria accept both simple boolean values and structured objects with evidence, verification metadata, and rationale:

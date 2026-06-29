@@ -29,9 +29,7 @@ Take your DevOps maturity assessment to the next level with the Enterprise Editi
 | Dedicated Support & SLA | ❌ | ✅ |
 | Single Sign-On (OIDC) | ❌ | ✅ |
 | Custom Branding | ❌ | ✅ |
-| Compliance Reporting (SOC 2, ISO 27001) | ❌ | 🔜 |
-
-*✅ Available today &nbsp;•&nbsp; 🔜 On the roadmap*
+| Compliance Reporting (SOC 2, ISO 27001) | ❌ | ✅ |
 
 ## Enterprise Features
 
@@ -59,6 +57,10 @@ Let users sign in through your corporate identity provider using OpenID Connect 
 
 Maintain a complete record of assessment activities, configuration changes, and user actions for compliance and security auditing purposes.
 
+### 📋 Compliance Reporting
+
+Generate compliance reports mapped to SOC 2 and ISO 27001 controls, built from your organization's audit trail and exportable as JSON or CSV to feed your GRC process.
+
 ### 🎨 Custom Branding
 
 White-label the self-hosted interface with your organization's product name, logo, and primary color for a seamless internal user experience. Branding can be set from environment variables or updated at runtime by an administrator.
@@ -66,14 +68,6 @@ White-label the self-hosted interface with your organization's product name, log
 ### 🤝 Dedicated Support & SLA
 
 Get priority support from the DevOps Maturity team, guaranteed response times, and access to a dedicated customer success manager.
-
-## On the Roadmap
-
-The following capabilities are planned for upcoming Enterprise releases and are not yet generally available. [Contact us](#get-started-with-enterprise) if any of these are important to your evaluation, and we'll share the latest timeline.
-
-### 📋 Compliance Reporting
-
-Exportable reports mapped to common compliance frameworks such as SOC 2 and ISO 27001, built on top of the Enterprise audit trail.
 
 ## How Enterprise Is Delivered
 

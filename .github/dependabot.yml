@@ -10,11 +10,31 @@ updates:
     npm-deps:
       patterns:
         - "*"
+    npm-deps-security:
+      applies-to: security-updates
+      patterns:
+        - "*"
 - package-ecosystem: github-actions
   directory: /
   schedule:
     interval: quarterly
   groups:
     github-action-deps:
+      patterns:
+        - "*"
+    github-action-deps-security:
+      applies-to: security-updates
+      patterns:
+        - "*"
+- package-ecosystem: docker
+  directory: /
+  schedule:
+    interval: quarterly
+  groups:
+    docker-deps:
+      patterns:
+        - "*"
+    docker-deps-security:
+      applies-to: security-updates
       patterns:
         - "*"

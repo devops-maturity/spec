@@ -22,7 +22,7 @@ _Want your project on this list?_ [send a pull request](https://github.com/devop
 
 ## Author
 
-Created and maintained by [**Xianpeng Shen**](https://shenxianpeng.github.io), Senior DevOps Engineer.  
+Created and maintained by [**Xianpeng Shen**](https://shenxianpeng.dev), Senior DevOps Engineer.  
 Specialized in CI/CD, automation, developer experience, and open-source tooling.\
 Creator of [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), and [conventional-branch](https://github.com/conventional-branch), widely used in both open-source and enterprise environments.\
 GitHub: [@shenxianpeng](https://github.com/shenxianpeng)

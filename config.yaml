@@ -29,12 +29,28 @@ languages:
       title: DevOps Maturity Specification
       description: Assess, improve, and showcase your DevOps maturity — across teams and organizations.
       actions:
+      - label: Get started
+        url: 'https://devops-maturity.github.io/devops-maturity/getting-started/quickstart/'
+        primary: true
       - label: Quick Summary
         url: '#summary'
       - label: Full Specification
         url: '#specification'
       - label: Contribute
         url: 'https://github.com/devops-maturity/spec'
+      # Home page "try it" snippets (layouts/partials/welcome.html)
+      try:
+        install_label: Assess your project from the terminal
+        install: pip install devops-maturity
+        install_note: Then run `dm assess`. [Quick start](https://devops-maturity.github.io/devops-maturity/getting-started/quickstart/)
+        action_label: Or keep the badge current in CI
+        action: |-
+          - uses: devops-maturity/devops-maturity-action@v1.0.0
+            with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+        action_note: Runs when `devops-maturity.yml` changes. [GitHub Action](https://github.com/devops-maturity/devops-maturity-action)
+        copy: Copy
+        copied: Copied
       # versions:
       #   current: v1.0.0
   zh:
@@ -44,9 +60,24 @@ languages:
       title: DevOps 成熟度规范
       description: 评估、改进和展示你的 DevOps 成熟度 — 跨团队和组织。
       actions:
+      - label: 开始使用
+        url: 'https://devops-maturity.github.io/devops-maturity/getting-started/quickstart/'
+        primary: true
       - label: 概述
         url: '#概述'
       - label: 完整规范
         url: '#规范'
       - label: 贡献
         url: 'https://github.com/devops-maturity/spec'
+      try:
+        install_label: 在终端里评估你的项目
+        install: pip install devops-maturity
+        install_note: 然后运行 `dm assess`。[快速上手（英文）](https://devops-maturity.github.io/devops-maturity/getting-started/quickstart/)
+        action_label: 或者在 CI 里自动更新徽章
+        action: |-
+          - uses: devops-maturity/devops-maturity-action@v1.0.0
+            with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+        action_note: 在 `devops-maturity.yml` 变更时运行。[GitHub Action](https://github.com/devops-maturity/devops-maturity-action)
+        copy: 复制
+        copied: 已复制

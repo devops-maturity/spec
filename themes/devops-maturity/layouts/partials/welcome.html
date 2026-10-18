@@ -1,12 +1,37 @@
+{{- $try := and .IsHome (.Param "Try") -}}
 <section class="welcome">
-  <div class="container">
+  <div class="container{{ if $try }} welcome__container--try{{ end }}">
     <h1 class="welcome__title">{{.Param "Title"}}</h1>
     <p class="welcome__description">{{.Param "Description"}}</p>
     {{ if .Param "Actions" }}
     <div class="welcome__actions">
       {{ range .Param "Actions" }}
-      <a class="welcome__action" href="{{.url}}">{{.label}}</a>
+      <a class="welcome__action{{ if .primary }} welcome__action--primary{{ end }}" href="{{.url}}">{{.label}}</a>
       {{ end }}
+    </div>
+    {{ end }}
+    {{- /* Home page only: the two ways to start using the tool, each with a
+           copy button. Copy and link clicks are reported to GA by
+           layouts/partials/scripts.html (copy_install, click_action,
+           click_docs). Text comes from `try` in config.yaml per language. */}}
+    {{ with $try }}
+    <div class="try">
+      <div class="try__item" data-copy-event="copy_install">
+        <span class="try__label">{{ .install_label }}</span>
+        <div class="try__snippet">
+          <pre class="try__code" id="try-install">{{ .install }}</pre>
+          <button class="try__copy" type="button" data-copy-target="try-install" data-copied="{{ .copied }}">{{ .copy }}</button>
+        </div>
+        <span class="try__note">{{ .install_note | markdownify }}</span>
+      </div>
+      <div class="try__item" data-copy-event="click_action">
+        <span class="try__label">{{ .action_label }}</span>
+        <div class="try__snippet">
+          <pre class="try__code" id="try-action">{{ .action }}</pre>
+          <button class="try__copy" type="button" data-copy-target="try-action" data-copied="{{ .copied }}">{{ .copy }}</button>
+        </div>
+        <span class="try__note">{{ .action_note | markdownify }}</span>
+      </div>
     </div>
     {{ end }}
     <figure class="welcome__image">

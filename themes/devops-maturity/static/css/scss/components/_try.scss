@@ -1,0 +1,99 @@
+// "Try it" block under the home page hero (layouts/partials/welcome.html):
+// the pip command and the GitHub Action step, each with a copy button.
+@use "./../abstracts/index";
+
+// The hero is a fixed 80vh; with the snippets it grows instead of overflowing.
+.welcome .welcome__container--try {
+  height: auto;
+  min-height: index.$welcome-height;
+  padding-top: index.$header-height + index.$gap-lg;
+  // the article card below is pulled up by $article-offset-top; clear it
+  padding-bottom: -(index.$article-offset-top) + index.$gap-lg;
+}
+
+.welcome__action--primary {
+  background-color: index.$color-neutral-light;
+  color: index.$color-primary;
+  font-weight: bold;
+
+  &:hover {
+    background-color: rgba(index.$color-neutral-light, .85);
+    color: index.$color-primary;
+  }
+}
+
+.try {
+  display: grid;
+  gap: index.$gap-md;
+  margin-top: index.$gap-sm;
+  max-width: 600px;
+
+  @include index.desktop {
+    width: 70%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: index.$gap-sm;
+    min-width: 0;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: .9;
+  }
+
+  &__snippet {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: index.$gap-sm;
+    padding: 12px 12px 12px 16px;
+    border-radius: index.$radius-lg;
+    background: rgba(index.$color-neutral-dark, .28);
+    color: index.$color-neutral-light;
+  }
+
+  &__code {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font: 14px/1.6 SFMono-Regular, Menlo, Consolas, monospace;
+    // wrap long lines on phones instead of a scrollbar; the copy button
+    // copies the text as written
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: none;
+    color: inherit;
+  }
+
+  &__copy {
+    flex: none;
+    padding: 4px 10px;
+    border: 1px solid rgba(index.$color-neutral-light, .6);
+    border-radius: 50px;
+    background: transparent;
+    color: index.$color-neutral-light;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background: index.$color-neutral-light;
+      color: index.$color-primary;
+    }
+  }
+
+  &__note {
+    font-size: 14px;
+    opacity: .9;
+
+    a {
+      color: inherit;
+    }
+  }
+}

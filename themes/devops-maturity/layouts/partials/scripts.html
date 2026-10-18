@@ -1,1 +1,79 @@
 <script src="{{ .Site.BaseURL }}js/bundle.js"></script>
+{{- /*
+  Copy buttons for the home page snippets (layouts/partials/welcome.html) and
+  the GA events that say whether visitors try the tool:
+
+  copy_install   the pip command was copied; method: button | select
+  click_action   the Action step was copied (method: button | select) or a
+                 link to the Action was followed (method: link)
+  click_docs     a link into the docs site (/devops-maturity/) was followed
+
+  Link events also carry placement (hero | content | other) and link_url.
+  Inline rather than in js/index.js so it needs no bundle rebuild.
+*/}}
+<script>
+  (function () {
+    function send(name, params) {
+      if (typeof window.gtag === 'function') window.gtag('event', name, params);
+    }
+
+    function copyWithSelection(text) {
+      var area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'absolute';
+      area.style.left = '-9999px';
+      document.body.appendChild(area);
+      area.select();
+      try { document.execCommand('copy'); } finally { document.body.removeChild(area); }
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(function () { copyWithSelection(text); });
+      }
+      copyWithSelection(text);
+      return Promise.resolve();
+    }
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest) return;
+
+      var button = event.target.closest('[data-copy-target]');
+      if (button) {
+        var source = document.getElementById(button.getAttribute('data-copy-target'));
+        var box = button.closest('[data-copy-event]');
+        if (!source) return;
+        var label = button.textContent;
+        copyText(source.textContent).then(function () {
+          button.textContent = button.getAttribute('data-copied') || label;
+          setTimeout(function () { button.textContent = label; }, 1500);
+        });
+        if (box) send(box.getAttribute('data-copy-event'), { method: 'button' });
+        return;
+      }
+
+      var a = event.target.closest('a[href]');
+      if (!a) return;
+      var url;
+      try { url = new URL(a.getAttribute('href'), location.href); } catch (e) { return; }
+      var placement = a.closest('.welcome') ? 'hero' : (a.closest('.markdown-body') ? 'content' : 'other');
+      var params = { placement: placement, link_url: url.href };
+      if (url.hostname === 'devops-maturity.github.io' && url.pathname.indexOf('/devops-maturity/') === 0) {
+        send('click_docs', params);
+      } else if (url.hostname === 'github.com' && /^\/(devops-maturity\/devops-maturity-action|marketplace\/actions\/devops-maturity)(\/|$)/i.test(url.pathname)) {
+        params.method = 'link';
+        send('click_action', params);
+      }
+    }, true);
+
+    // Selecting the text and copying it by hand counts too.
+    document.addEventListener('copy', function () {
+      var selection = document.getSelection();
+      var node = selection && selection.anchorNode;
+      var element = node && (node.nodeType === 1 ? node : node.parentElement);
+      var box = element && element.closest && element.closest('[data-copy-event]');
+      if (box) send(box.getAttribute('data-copy-event'), { method: 'select' });
+    });
+  })();
+</script>

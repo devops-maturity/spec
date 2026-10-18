@@ -1,0 +1,24 @@
+themes/devops-maturity/layouts/partials/head.html
+  s_3b1f4d993766cf::t_0c1eb5f4cfa4fb 16-18,20-21
+  s_3b1f4d993766cf::t_eba153570ba42f 19
+config.yaml
+  s_3b1f4d993766cf::t_397af2bdf9b3c2 1-4,32-34,41-53,63-65,72-83
+static/robots.txt
+  s_3b1f4d993766cf::t_ff9a328967e545 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "45d6f0534c4c5672540cbdade0220ce60dc93395",
+  "prompts": {},
+  "sessions": {
+    "s_3b1f4d993766cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2969eecb-975d-43eb-a8ec-7534023fdcae",
+        "model": "unknown"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

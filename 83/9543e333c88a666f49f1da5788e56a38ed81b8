@@ -1,0 +1,36 @@
+themes/devops-maturity/layouts/partials/scripts.html
+  s_3b1f4d993766cf::t_c6696f492c6039 20,29-35
+  s_3b1f4d993766cf::t_b82533002f046a 2-19,21-28,36-79
+themes/devops-maturity/layouts/partials/welcome.html
+  s_3b1f4d993766cf::t_a35f6f52b6a2ba 20,25,28,33
+  s_3b1f4d993766cf::t_6d1ee11ad2581b 9,13-16,18-19,21-24,26-27,29-32,34
+  s_3b1f4d993766cf::t_7779898ce4a436 17
+  s_3b1f4d993766cf::t_1aff6d38415b17 1,3
+  s_3b1f4d993766cf::t_e04caae5607c74 35-36
+themes/devops-maturity/static/css/scss/style.scss
+  s_3b1f4d993766cf::t_3d4de7524c531d 8
+themes/devops-maturity/static/css/scss/components/_try.scss
+  s_3b1f4d993766cf::t_1d5e3daa56c8a8 10-11
+  s_3b1f4d993766cf::t_495781a54ee7ef 29,32
+  s_3b1f4d993766cf::t_eb0aa178e22439 64-67
+  s_3b1f4d993766cf::t_dff76d37f21654 1-4,14-28,30-31,33-63,68-99
+  s_3b1f4d993766cf::t_3d2cec73310e3f 5-9,12-13
+themes/devops-maturity/static/css/style.css
+  s_3b1f4d993766cf::t_a1806523dcda3d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "839543e333c88a666f49f1da5788e56a38ed81b8",
+  "prompts": {},
+  "sessions": {
+    "s_3b1f4d993766cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2969eecb-975d-43eb-a8ec-7534023fdcae",
+        "model": "unknown"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

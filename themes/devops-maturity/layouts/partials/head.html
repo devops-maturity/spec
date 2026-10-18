@@ -13,6 +13,12 @@
 
   <title>{{ .Param "Title" }}</title>
   <meta name="description" content="{{ .Param "Description" }}"/>
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- if .IsTranslated }}
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- end }}
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
 
   <!-- Twitter Card data -->

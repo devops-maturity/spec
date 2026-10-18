@@ -1,4 +1,7 @@
-baseURL: '/'
+# Absolute, so the sitemap, canonical and og:url carry full URLs. With '/'
+# the sitemap index listed '/en/sitemap.xml' and Search Console could not
+# fetch it. `hugo server` still overrides this with its own address.
+baseURL: 'https://devops-maturity.github.io/'
 languageCode: en-us
 theme: devops-maturity
 # defaultContentLanguageInSubdir: true

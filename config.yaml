@@ -4,6 +4,10 @@
 baseURL: /
 languageCode: en-us
 theme: devops-maturity
+# Nothing in content/ has tags or categories and the theme has no template for
+# them, so Hugo built /categories/ and /tags/ as an index.xml only: a 404 that
+# the sitemap still listed.
+disableKinds: ["taxonomy", "term"]
 # defaultContentLanguageInSubdir: true
 defaultContentLanguage: "en"
 

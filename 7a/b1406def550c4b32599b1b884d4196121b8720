@@ -1,0 +1,19 @@
+themes/devops-maturity/layouts/partials/scripts.html
+  s_d4e502d970e663::t_f6bb35cf1dc1af 17-22,25-31,59-63,66-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7ab1406def550c4b32599b1b884d4196121b8720",
+  "prompts": {},
+  "sessions": {
+    "s_d4e502d970e663": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce124ada-24ee-4c12-90cc-19ec0bd75000",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

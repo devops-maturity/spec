@@ -11,12 +11,18 @@
   
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
+  {{- /* baseURL is "/" so a deploy preview loads its own assets. canonical,
+         hreflang and og:url have to be absolute and always name production,
+         so they are built from canonicalBaseURL rather than .Permalink. */}}
+  {{- $base := .Site.Params.canonicalBaseURL -}}
+  {{- $canonical := printf "%s%s" $base (strings.TrimPrefix "/" .RelPermalink) }}
+
   <title>{{ .Param "Title" }}</title>
   <meta name="description" content="{{ .Param "Description" }}"/>
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ $canonical }}">
   {{- if .IsTranslated }}
   {{- range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ printf "%s%s" $base (strings.TrimPrefix "/" .RelPermalink) }}">
   {{- end }}
   {{- end }}
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -29,7 +35,7 @@
   <!-- Open Graph data -->
   <meta property="og:title" content="{{ .Param "Title" }}"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:url" content="{{ .Permalink }}"/>
+  <meta property="og:url" content="{{ $canonical }}"/>
   <meta property="og:description" content="{{ .Param "Description" }}"/>
   <meta property="og:site_name" content="{{ .Param "Title" }}"/>
 </head>

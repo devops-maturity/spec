@@ -1,7 +1,7 @@
-# Absolute, so the sitemap, canonical and og:url carry full URLs. With '/'
-# the sitemap index listed '/en/sitemap.xml' and Search Console could not
-# fetch it. `hugo server` still overrides this with its own address.
-baseURL: 'https://devops-maturity.github.io/'
+# Stays '/' so a Netlify deploy preview serves its own CSS, JS and links rather
+# than production's. The URLs that must be absolute (sitemap <loc>, canonical,
+# hreflang, og:url) are built from params.canonicalBaseURL instead.
+baseURL: /
 languageCode: en-us
 theme: devops-maturity
 # defaultContentLanguageInSubdir: true
@@ -9,6 +9,11 @@ defaultContentLanguage: "en"
 
 # Global parameters
 params:
+  # Production host for the sitemap, canonical, hreflang and og:url. Always
+  # production, also on a deploy preview: a preview that named itself canonical
+  # would compete with the real site in the index.
+  canonicalBaseURL: 'https://devops-maturity.github.io/'
+
   license:
     title: License
     action:

@@ -1,0 +1,28 @@
+themes/devops-maturity/layouts/_default/sitemap.xml
+  s_d4e502d970e663::t_b8211ffd3291db 1,3-21
+  s_d4e502d970e663::t_e70764d6bb7e95 2
+themes/devops-maturity/layouts/_default/sitemapindex.xml
+  s_d4e502d970e663::t_e70764d6bb7e95 2
+  s_d4e502d970e663::t_b8211ffd3291db 1,3-11
+themes/devops-maturity/layouts/partials/head.html
+  s_d4e502d970e663::t_fbd82ab5423d6a 38
+  s_d4e502d970e663::t_2694e13bd1a1dc 14-19,22,25
+config.yaml
+  s_d4e502d970e663::t_8e2f3f3757d4be 1-4,12-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8edcf4cbb1c49b7a5d9678c019d806f0bbbb8021",
+  "prompts": {},
+  "sessions": {
+    "s_d4e502d970e663": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce124ada-24ee-4c12-90cc-19ec0bd75000",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

@@ -14,8 +14,20 @@
 <script>
   (function () {
     function send(name, params) {
-      if (typeof window.gtag === 'function') window.gtag('event', name, params);
+      if (typeof window.gtag !== 'function') return;
+      try {
+        window.gtag('event', name, params);
+      } catch (e) {
+        // Nothing to recover; the event is simply not counted.
+      }
     }
+
+    // Each button's own label, kept before any click can swap it for "Copied".
+    // Reading textContent on click instead would, on a second click inside the
+    // 1.5 s window, save "Copied" as the label to restore.
+    Array.prototype.forEach.call(document.querySelectorAll('[data-copy-target]'), function (button) {
+      button.setAttribute('data-label', button.textContent);
+    });
 
     function copyWithSelection(text) {
       var area = document.createElement('textarea');
@@ -44,10 +56,15 @@
         var source = document.getElementById(button.getAttribute('data-copy-target'));
         var box = button.closest('[data-copy-event]');
         if (!source) return;
-        var label = button.textContent;
+        // A double-click is one copy, not two copy events.
+        var now = Date.now();
+        if (now - (button.copiedAt || 0) < 1000) return;
+        button.copiedAt = now;
+        var label = button.getAttribute('data-label') || button.textContent;
         copyText(source.textContent).then(function () {
           button.textContent = button.getAttribute('data-copied') || label;
-          setTimeout(function () { button.textContent = label; }, 1500);
+          clearTimeout(button.restoreTimer);
+          button.restoreTimer = setTimeout(function () { button.textContent = label; }, 1500);
         });
         if (box) send(box.getAttribute('data-copy-event'), { method: 'button' });
         return;

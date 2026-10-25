@@ -6,6 +6,8 @@ updates:
   directory: /themes/devops-maturity/
   schedule:
     interval: quarterly
+  # Security-only maintenance: 0 disables version updates; security updates still open PRs.
+  open-pull-requests-limit: 0
   groups:
     npm-deps:
       patterns:
@@ -14,6 +16,8 @@ updates:
   directory: /
   schedule:
     interval: quarterly
+  # Security-only maintenance: 0 disables version updates; security updates still open PRs.
+  open-pull-requests-limit: 0
   groups:
     github-action-deps:
       patterns:
